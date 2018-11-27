@@ -1,0 +1,87 @@
+        1A K M Nazmuzzaman                       11/12/201109:17     Communication Division        
+        2Mohammad Mahbub Hasan Milton            11/12/201110:4622:30Technical                     
+        3Diana Zaman                             11/12/201109:42     Marketing & Sales             
+        4Mofasser Ahmed (Tamal)                  11/12/201109:24     Technical                     
+        5Md. Mahfuzur Rahman                     11/12/201109:2719:38Accounts & Operation          
+        6Mohammad Ziaur Rahman                   11/12/201109:23     Marketing & Sales             
+        7Mezbah Uddin Ahmed                      11/12/201109:1619:19Technical                     
+        8Md. Abdul Hakim                         11/12/201110:48     Software                      
+        9Sayed Asif Iqbal                        11/12/201109:16     Marketing & Sales             
+       10Md. Shahiduzzaman (Tushar)              11/12/201109:0218:06Marketing & Sales             
+       11Md. Asadul Haque (Rashed)               11/12/201109:3919:23IMPL                          
+       12Md. Azmir Hossain                       11/12/201108:51     FON                           
+       13S. M. Mohebubur Rahman                  11/12/201109:0517:47GIS                           
+       14Tahera Hossain Moni                     11/12/201110:1519:12Technical                     
+       15Sanwar Reaz                             11/12/201109:1620:06Technical                     
+       16Md. Sayeduzzaman (Shahin)               11/12/201109:3218:22HR & Accounts                 
+       17Manik Hossain Bapery                    11/12/201109:1319:11Accounts                      
+       18Md. Minhaz Hossain                      11/12/2011          FON                           
+       19Md. Bodiul Alam (Palash)                11/12/201109:0517:42Technical                     
+       22Serajul Islam (Ripon)                   11/12/201109:2817:42Technical                     
+       23Tanvir Md. Rassel                       11/12/2011          Operation                     
+       24Sajeed Ahmed                            11/12/201111:4922:58Software                      
+       25Jibon Bikash Roy                        11/12/2011     20:42Software                      
+       26Ali Hasan Imam                          11/12/2011          Software                      
+       27Mizanur Rahman                          11/12/2011     22:10Technical                     
+       28Md. Boktiar Hossain                     11/12/201110:5117:40Technical                     
+       29Md. Abdus Samad                         11/12/201109:21     Admin                         
+       30Ibna Bin Khaled (Dulal)                 11/12/201108:4518:35Operation                     
+       31Firoz Alam                              11/12/201108:41     Admin                         
+       32Md. Shofiq Mia                          11/12/2011          Admin                         
+       33Babul Dhali                             11/12/201108:4517:43Admin                         
+       34Md. Monzur Hossain                      11/12/201107:42     Admin                         
+       35Md. Abdul Hamid                         11/12/201107:42     Admin                         
+       36Md. Shahabuddin                         11/12/201108:46     FON                           
+       37Md. Milon Chand                         11/12/201108:02     FON                           
+       38Md. Nazrul Islam                        11/12/201109:06     FON                           
+       39Mohiruddin                              11/12/201108:40     FON                           
+       40Md. Abdur Razzak                        11/12/2011          FON                           
+       41Md. Solaiman                            11/12/201108:49     FON                           
+       42Md. Sohel Ahmed                         11/12/201108:5917:36FON                           
+       43Md. Alauddin                            11/12/201108:33     FON                           
+       44Md. Mofiz Ali                           11/12/201108:46     FON                           
+       45Mohammad Ali Jinnah                     11/12/201108:49     FON                           
+       47Abdul Alim                              11/12/201108:28     FON                           
+       48Md. Iqbal Hossain                       11/12/201108:29     FON                           
+       49Naimur Rahman Farid                     11/12/2011          FON                           
+       50Md. Shohag Sarder                       11/12/201109:33     FON                           
+       52Sohel Rana                              11/12/2011     17:02FON                           
+       53Md. Shohidul Islam-(1)                  11/12/201108:24     FON                           
+       54Khairul Alam (Shobuj)                   11/12/2011          FON                           
+       56Md. Farid Molla                         11/12/201111:1622:31Admin                         
+       57A F M Gazi                              11/12/201109:3116:42Marketing & Sales             
+       58Muhammed Mamunur Rahman                 11/12/201109:0518:12Marketing & Sales             
+       59Md. Shahin Gharami                      11/12/201108:4617:03FON                           
+       60Md. Iqbal Hossain [Driver]              11/12/201107:0919:20Admin                         
+       61Md. Fakhrul Islam                       11/12/201109:2417:03Technical                     
+       62Md. Shohidul Islam-2                    11/12/2011          FON                           
+       63Md. Shofiqul Islam                      11/12/201109:0617:01FON                           
+       66Md. Salauddin                           11/12/201110:3718:35Admin                         
+       67Abu Jaker Md. Titumir-Ul- Islam         11/12/2011          Technical                     
+       68Sayeed Shah                             11/12/2011          Technical                     
+       69Atanu Shaha                             11/12/2011          Technical                     
+       70Enam Ahmed                              11/12/201108:23     Technical                     
+       71Ava Rahman Kashfi                       11/12/201112:0619:24Technical                     
+       72Shahida Sultana                         11/12/201109:1417:24Technical                     
+       73Sadia Binte Islam                       11/12/201108:0615:30Technical                     
+       74Md. Moniruzzmal                         11/12/201108:0318:08Admin                         
+       75B. M. Shahrier Majumder                 11/12/201110:2318:28Project Management            
+       77Mohammad Salim                          11/12/201109:1819:23Accounts                      
+       78Md. Kamrul Islam Saeef                  11/12/2011     20:40Software                      
+       79Mohammad Alamgir Kabir                  11/12/201109:3517:43Technical                     
+       80Nazmul Hasan                            11/12/201108:5917:01FON                           
+       82Imamul Haque Khan                       11/12/201108:5817:13FON                           
+       83Tarik Iqbal                             11/12/201108:5917:01FON                           
+       84Mizanur Rahman Khan                     11/12/201109:0617:01FON                           
+       85Oli Md. Hridoy                          11/12/201108:59     FON                           
+       86Khairul Haque Tutul                     11/12/201110:13     Software                      
+       87Upal Kumar Halder                       11/12/2011     21:57Technical                     
+       89Mahfuz Reza Masaud                      11/12/201111:2719:24Technical                     
+       90Mohiuddin Ahmed Chowdhury               11/12/201110:1719:54VAS                           
+       91Md. Sujon                               11/12/201108:0019:53Admin                         
+       92Syed Tayubur Rahman                     11/12/201109:48     Software                      
+       93Md. Mozammel Haque                      11/12/2011          Admin                         
+       94Mufti Ahsan                             11/12/201109:2818:36Marketing & Sales             
+       95Leera Arjumand                          11/12/201108:5718:31VAS                           
+       96Monjurul Haque                          11/12/201108:4519:38HR & Admin                    
+       97Baki Ullah                              11/12/201108:4518:50Marketing & Sales             

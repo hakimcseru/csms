@@ -1,0 +1,321 @@
+<?php
+
+/**
+ * This is the model class for table "attendance_temp_data".
+ *
+ * The followings are the available columns in table 'attendance_temp_data':
+ * @property string $id
+ * @property string $core_employee_id
+ * @property string $date
+ * @property string $time
+ * @property string $mode
+ * @property string $note
+ *
+ * The followings are the available model relations:
+ * @property CoreEmployee $employee
+ */
+class AttendanceTempData extends CActiveRecord {
+
+	public $dateFrom, $dateTo;
+
+	/**
+	 * Returns the static model of the specified AR class.
+	 * @param string $className active record class name.
+	 * @return AttendanceTempData the static model class
+	 */
+	public static function model($className=__CLASS__) {
+		return parent::model($className);
+	}
+
+	/**
+	 * @return string the associated database table name
+	 */
+	public function tableName() {
+		return 'attendance_temp_data';
+	}
+
+	/**
+	 * @return array validation rules for model attributes.
+	 */
+	public function rules() {
+		// NOTE: you should only define rules for those attributes that
+		// will receive user inputs.
+		return array(
+			array('core_employee_id, date, time, mode', 'required'),
+			array('note', 'default', 'setOnEmpty' => true, 'value' => null),
+			array('core_employee_id', 'length', 'max' => 20),
+			array('mode', 'length', 'max' => 4),
+			array('note', 'length', 'max' => 256),
+			// The following rule is used by search().
+			// Please remove those attributes that should not be searched.
+			array('id, core_employee_id, date, time, mode, note, dateFrom, dateTo', 'safe', 'on' => 'search'),
+		);
+	}
+
+	/**
+	 * @return array relational rules.
+	 */
+	public function relations() {
+		// NOTE: you may need to adjust the relation name and the related
+		// class name for the relations automatically generated below.
+		return array(
+			'employee' => array(self::BELONGS_TO, 'CoreEmployee', 'core_employee_id'),
+		);
+	}
+
+	/**
+	 * @return array customized attribute labels (name=>label)
+	 */
+	public function attributeLabels() {
+		return array(
+			'id' => Yii::t('attendance',  'ID'),
+			'core_employee_id' => Yii::t('attendance',  'Employee'),
+			'date' =>Yii::t('attendance',  'Date'),
+			'time' => Yii::t('attendance', 'Time'),
+			'mode' => Yii::t('attendance', 'Mode'),
+			'note' => Yii::t('attendance', 'Note'),
+			'dateFrom'=>Yii::t('attendance', 'Date From'),
+			'dateTo'=>Yii::t('attendance', 'Date To'),
+		);
+	}
+
+	/**
+	 * Retrieves a list of models based on the current search/filter conditions.
+	 * @return CActiveDataProvider the data provider that can return the models based on the search/filter conditions.
+	 */
+	public function search() {
+		$criteria = new CDbCriteria;
+
+		$criteria->compare('t.core_employee_id', $this->core_employee_id, false);
+		if(isset($this->dateFrom,  $this->dateTo))
+			$criteria->addBetweenCondition('t.date', $this->dateFrom, $this->dateTo);
+		$criteria->order = 't.date DESC, t.core_employee_id ASC, t.time ASC';
+
+		return new CActiveDataProvider($this, array(
+			'pagination'=>array(
+				'pageSize'=> Yii::app()->user->getState(get_class($this).'_pageSize'),
+			),
+			'criteria' => $criteria,
+		));
+	}
+
+	public function behaviors() {
+		return array(
+			'ERememberFiltersBehavior' => array(
+				'class' => 'application.components.ERememberFiltersBehavior',
+				'defaults' => array(), /* default value of attributes */
+				'defaultStickOnClear' => false /* Put default value if user clear the attributes */
+			),
+		);
+	}
+
+	public function tMode(){
+		if($this->mode == 'IN')
+			return Yii::t('attendance','In');
+		if($this->mode == 'OUT')
+			return Yii::t('attendance','Out');
+		return $this->mode;
+	}
+
+	public function tCore_employee_id(){
+		if(Yii::app()->language == 'bn')
+			return Bndate::bangla_number($this->core_employee_id);
+		return $this->core_employee_id;
+	}
+
+	public function tDate(){
+		if(Yii::app()->language == 'bn')
+		{
+			$bndate = new Bndate(strtotime($this->date));
+			$date = $bndate->get_date();
+			return $date[0].' '.$date[1].' '.$date[2];
+		}
+		return $this->date;
+	}
+
+	public function tTime(){
+		if(Yii::app()->language == 'bn')
+		{
+			/*$bndate = new Bndate(strtotime($this->time));
+			$date = $bndate->get_date();
+			$time = $bndate->bangla_number(date('H:i:s', strtotime($this->time)));
+			return $date[0].' '.$date[1].' '.$date[2].', '.$time;*/
+			return Bndate::bangla_number(date('H:i:s', strtotime($this->time)));
+		}
+		return $this->time;
+	}
+
+	public static function modeList(){
+		return array(
+			'IN'=>Yii::t('attendance','In'),
+			'OUT'=>Yii::t('attendance','Out'),
+			);
+	}
+
+	public function save($runValidation = true, $attributes = null) {
+		if($this->model()->exists("core_employee_id = $this->core_employee_id AND date = '$this->date' AND time = '$this->time' AND mode='$this->mode'"))
+			return true;
+		return parent::save($runValidation, $attributes);
+	}
+
+	public function processData()
+	{
+		if($this->isNewRecord) return;
+
+		if(empty($this->employee)){
+			$this->note = "Error: Invalid Employee.";
+			parent::save(false);
+			return;
+		}
+		if(empty ($this->employee->shift)){
+			$this->note = "Error: No Shift Define.";
+			parent::save(false);
+			return;
+		}
+
+		$day = date('l',  strtotime($this->date));
+
+		//check for workday
+		if(empty($this->employee->shift->$day))
+		{
+			//Day Off
+			$this->note = "Error: Day off";
+			parent::save(false);
+			return;
+		}
+		else
+		{
+			//workday
+			//If time is smaller than cut-off time of shift, attendance will be count for previous day.
+			if($this->time < $this->employee->shift->$day->cut_out_time)
+			{
+				$this->date = date('Y-m-d', strtotime($this->date) - 24*60*60);
+				$day = date('l',  strtotime($this->date));
+				$this->note = "Info: Attendance Shifted to Previous date.";
+				if(empty($this->employee->shift->$day))
+				{
+					//Day Off
+					parent::save(false);
+					return;
+				}
+			}
+			//Check if employee is on leave
+			if(AttendanceLeave::model()->exists("core_employee_id = $this->core_employee_id AND '$this->date' >= start_date AND '$this->date' <= end_date"))
+			{
+				$this->note = "Error: Employee is on Leave.";
+				parent::save(false);
+				return;
+			}
+			//Get attendance previously inserted for this date.
+			$finalData = AttendanceFinalData::model()->find("core_employee_id=$this->core_employee_id AND date='$this->date'");
+			if(empty($finalData))
+				$finalData = new AttendanceFinalData ();
+			$logs = json_decode($finalData->json_log,true);
+			if(!is_array($logs))
+			{
+				//Previous data not available
+				$logs = array();
+			}
+			if($this->mode == 'IN')
+				$logs[] = array('mode'=>'IN', 'time'=>$this->time);
+			else
+				$logs[] = array('mode'=>'OUT', 'time'=>$this->time);
+			//Calculate in, out and break time
+			$in_time = strtotime($finalData->in_time);
+			$out_time = strtotime($finalData->out_time);
+			$break_start = strtotime($finalData->break_start);
+			$break_end = strtotime($finalData->break_end);
+			foreach($logs as $log)
+			{
+				$time = strtotime($log['time']);
+				if($log['mode'] === 'IN')
+				{
+					//If time is less than current in time, It is will be count as in.
+					if(!$in_time  || $time < $in_time){
+						//swich current in time to break end time
+						if(!$break_end  || $in_time > $break_end){
+							$finalData->break_end = $finalData->in_time;
+						}
+						$finalData->in_time = $log['time'];
+						$in_time = $time;
+					}
+					//If time is less than current break_end time, It is will be count as break_end.
+					elseif(!$break_end  || $time > $break_end){
+						$finalData->break_end = $log['time'];
+					}
+				}
+				elseif($log['mode'] === 'OUT')
+				{
+					//If time is grater than current out time, It will be count as out
+					if(!$out_time  || $time > $out_time){
+						//switch current out_time to break_start time
+						if(!$break_start  || $out_time < $break_start){
+							$finalData->break_start = $finalData->out_time;
+						}
+						$finalData->out_time = $log['time'];
+						$out_time = $time;
+					}
+					//If time is grater than current break_start time, It will be count as break_start
+					elseif(!$break_start  || $time < $break_start){
+						$finalData->break_start = $log['time'];
+					}
+				}
+			}
+
+			//Remove Duplicate Data
+			if($finalData->in_time == $finalData->break_end) $finalData->break_end = null;
+			if($finalData->out_time == $finalData->break_start) $finalData->break_start = null;
+
+			//Calculate Late In, Early Out
+			$finalData->status = 'P ';
+			if(!$this->employee->shift->ignoreLate){
+				$shift_max_start_time = strtotime($this->date.' '.$this->employee->shift->$day->max_start_time);
+				$shift_min_end_time = strtotime($this->date.' '.$this->employee->shift->$day->min_end_time);
+				if(empty($finalData->in_time) || $in_time > $shift_max_start_time) $finalData->status .= 'L ';
+				if(empty($finalData->out_time) || $out_time < $shift_min_end_time) $finalData->status .= 'E ';
+			}
+
+			//Calculate Workhour
+			$inCount = $outCount = $inSum = $outSum = 0;
+			foreach($logs as $log){
+				if($log['mode']=='IN')
+				{
+					$inSum += strtotime($log['time']);
+					++$inCount;
+				}
+				elseif($log['mode']=='OUT')
+				{
+					$outSum += strtotime($log['time']);
+					++$outCount;
+				}
+			}
+			if($inCount == $outCount && $inCount != 0 && $outSum > $inSum){
+				$finalData->work_hour = round(($outSum - $inSum)/3600.0);
+			}
+			else
+				$finalData->work_hour = 0;
+
+			//Calculate Overtime
+			if($this->employee->shift->ignoreOvertime || $finalData->work_hour == 0){
+				$finalData->over_time = 0;
+			}
+			else{
+				$over_time = $finalData->work_hour - $this->employee->shift->$day->work_hour;
+				$finalData->over_time = ($over_time > 0)? $over_time : 0;
+			}
+
+			//Save final data
+			$finalData->core_employee_id = $this->employee->id;
+			$finalData->core_employee_name = $this->employee->name;
+			$finalData->core_shift_id = $this->employee->shift->$day->id;
+			$finalData->core_shift_name = $this->employee->shift->$day->name;
+			$finalData->core_department_id = $this->employee->department->id;
+			$finalData->core_department_name = $this->employee->department->name;
+			$finalData->date = $this->date;
+			$finalData->json_log = json_encode($logs);
+			if($finalData->save(false))
+				$this->delete ();
+		}
+	}
+
+}

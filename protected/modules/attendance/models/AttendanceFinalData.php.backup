@@ -1,0 +1,224 @@
+<?php
+
+/**
+ * This is the model class for table "{{attendance_final_data}}".
+ *
+ * The followings are the available columns in table '{{attendance_final_data}}':
+ * @property string $attendance_final_data_id
+ * @property string $attendance_final_data_ref_core_employee_id
+ * @property string $attendance_final_data_ref_core_shift_id
+ * @property string $attendance_final_data_ref_core_department_id
+ * @property string $attendance_final_data_date
+ * @property string $attendance_final_data_status
+ * @property string $attendance_final_data_in_time
+ * @property string $attendance_final_data_out_time
+ * @property integer $attendance_final_data_over_time
+ * @property string $attendance_final_data_note
+ *
+ * The followings are the property used on search
+ * @property string $attendance_final_data_date_from
+ * @property string $attendance_final_data_date_to
+ *
+ * The followings are the available model relations:
+ * @property CoreDepartment $department
+ * @property CoreEmployee $employee
+ * @property CoreShift $shift
+ */
+class AttendanceFinalData1111 extends CActiveRecord
+{
+	public $enum_attendance_final_data_status = array(
+		'P ' => 'Present',
+		'A ' => 'Absent',
+		'IE ' => 'Early in',
+		'IL ' => 'Late in',
+		'OE ' => 'Early out',
+		'OL ' => 'Late out',
+		'LC ' => 'Casual leave',
+		'LS ' => 'Sick leave',
+		'LE ' => 'Earn leave',
+		'LM ' => 'Metarnity leave',
+		'LO ' => 'Others leave',
+		'LW ' => 'Leave w.o. pay',
+		'HW ' => 'Weekly holiday',
+		'HF ' => 'Festival holiday',
+		'HO ' => 'Others holiday',
+	);
+
+	public $attendance_final_data_date_from;
+	public $attendance_final_data_date_to;
+
+	/**
+	 * Returns the static model of the specified AR class.
+	 * @return AttendanceFinalData the static model class
+	 */
+	public static function model($className=__CLASS__)
+	{
+		return parent::model($className);
+	}
+
+	/**
+	 * @return string the associated database table name
+	 */
+	public function tableName()
+	{
+		return '{{attendance_final_data}}';
+	}
+
+	/**
+	 * @return array validation rules for model attributes.
+	 */
+	public function rules()
+	{
+		// NOTE: you should only define rules for those attributes that
+		// will receive user inputs.
+		return array(
+			array('attendance_final_data_ref_core_employee_id, attendance_final_data_date, attendance_final_data_status, attendance_final_data_ref_core_shift_id, attendance_final_data_ref_core_department_id', 'required', 'on'=>'insert, update'),
+			array('attendance_final_data_ref_core_employee_id, attendance_final_data_date', 'unique', 'on'=>'insert, update', 'message'=>'Attendance of this employee for this date has already inserted.'),
+			array('attendance_final_data_over_time', 'numerical', 'integerOnly'=>true),
+			array('attendance_final_data_ref_core_employee_id, attendance_final_data_ref_core_shift_id, attendance_final_data_ref_core_department_id', 'length', 'max'=>20),
+			array('attendance_final_data_status', 'length', 'max'=>16),
+			array('attendance_final_data_note', 'length', 'max'=>256),
+			array('attendance_final_data_ref_core_employee_id, attendance_final_data_date_from, attendance_final_data_date_to', 'required', 'on'=>'report'),
+			// The following rule is used by search().
+			// Please remove those attributes that should not be searched.
+			array('attendance_final_data_id, attendance_final_data_ref_core_employee_id, attendance_final_data_ref_core_shift_id, attendance_final_data_ref_core_department_id, attendance_final_data_date, attendance_final_data_status, attendance_final_data_in_time, attendance_final_data_out_time, attendance_final_data_over_time, attendance_final_data_note, attendance_final_data_date_from, attendance_final_data_date_to', 'safe', 'on'=>'search'),
+			array('attendance_final_data_id, attendance_final_data_ref_core_employee_id, attendance_final_data_ref_core_shift_id, attendance_final_data_ref_core_department_id, attendance_final_data_date, attendance_final_data_status, attendance_final_data_in_time, attendance_final_data_out_time, attendance_final_data_over_time, attendance_final_data_note', 'safe', 'on'=>'report'),
+		);
+	}
+
+	/**
+	 * @return array relational rules.
+	 */
+	public function relations()
+	{
+		// NOTE: you may need to adjust the relation name and the related
+		// class name for the relations automatically generated below.
+		return array(
+			'department' => array(self::BELONGS_TO, 'CoreDepartment', 'attendance_final_data_ref_core_department_id'),
+			'employee' => array(self::BELONGS_TO, 'CoreEmployee', 'attendance_final_data_ref_core_employee_id'),
+			'shift' => array(self::BELONGS_TO, 'CoreShift', 'attendance_final_data_ref_core_shift_id'),
+		);
+	}
+
+	/**
+	 * @return array customized attribute labels (name=>label)
+	 */
+	public function attributeLabels()
+	{
+		return array(
+			'attendance_final_data_id' => 'Attendance Final Data',
+			'attendance_final_data_ref_core_employee_id' => 'Employee',
+			'attendance_final_data_ref_core_shift_id' => 'Shift',
+			'attendance_final_data_ref_core_department_id' => 'Department',
+			'attendance_final_data_date' => 'Date',
+			'attendance_final_data_status' => 'Status',
+			'attendance_final_data_in_time' => 'In Time',
+			'attendance_final_data_out_time' => 'Out Time',
+			'attendance_final_data_over_time' => 'Over Time',
+			'attendance_final_data_note' => 'Note',
+			'attendance_final_data_date_from' => 'From',
+			'attendance_final_data_date_to' => 'To',
+		);
+	}
+
+	public function getSearchCriteria()
+	{
+		// Warning: Please modify the following code to remove attributes that
+		// should not be searched.
+
+		$criteria=new CDbCriteria;
+
+		$criteria->compare('attendance_final_data_id',$this->attendance_final_data_id,false);
+		$criteria->compare('attendance_final_data_ref_core_employee_id',$this->attendance_final_data_ref_core_employee_id,false);
+		$criteria->compare('attendance_final_data_ref_core_shift_id',$this->attendance_final_data_ref_core_shift_id,false);
+		$criteria->compare('attendance_final_data_ref_core_department_id',$this->attendance_final_data_ref_core_department_id,false);
+		$criteria->compare('attendance_final_data_date',$this->attendance_final_data_date,true);
+		$criteria->compare('attendance_final_data_status',$this->attendance_final_data_status,true);
+		$criteria->compare('attendance_final_data_in_time',$this->attendance_final_data_in_time,true);
+		$criteria->compare('attendance_final_data_out_time',$this->attendance_final_data_out_time,true);
+		$criteria->compare('attendance_final_data_over_time',$this->attendance_final_data_over_time);
+		$criteria->compare('attendance_final_data_note',$this->attendance_final_data_note,true);
+		if(isset ($this->attendance_final_data_date_from) && isset ($this->attendance_final_data_date_to))
+			$criteria->addBetweenCondition('attendance_final_data_date', $this->attendance_final_data_date_from, $this->attendance_final_data_date_to);
+
+		$criteria->with = array('shift', 'department', 'employee');
+
+		return $criteria;
+	}
+
+
+	/**
+	 * Retrieves a list of models based on the current search/filter conditions.
+	 * @return CActiveDataProvider the data provider that can return the models based on the search/filter conditions.
+	 */
+	public function search()
+	{
+		return new CActiveDataProvider($this, array(
+			'criteria'=> $this->getSearchCriteria(),
+		));
+	}
+
+	public function totalRow($value = '', $type = '')
+	{
+		if($type == 'employee')
+		{
+			$criteria = $this->getEmployeeReportCriteria();
+		}
+		else
+		{
+			$criteria = $this->getSearchCriteria();
+		}
+
+		if($value)
+		{
+			$criteria->compare('attendance_final_data_status', $value, true);
+		}
+		return  AttendanceFinalData::model()->count($criteria);
+	}
+
+	public function totalOT($type = '')
+	{
+		if($type == "employee")
+		{
+			$criteria = $this->getEmployeeReportCriteria();
+		}
+		else
+		{
+			$criteria=$this->getSearchCriteria();
+		}
+		$criteria->select='SUM(attendance_final_data_over_time)';
+		return $this->commandBuilder->createFindCommand($this->getTableSchema(),$criteria)->queryScalar();
+	}
+
+	public function getEmployeeReportCriteria()
+	{
+		$criteria = new CDbCriteria;
+		$criteria->addColumnCondition(array('attendance_final_data_ref_core_employee_id'=> $this->attendance_final_data_ref_core_employee_id));
+		$criteria->addBetweenCondition('attendance_final_data_date', $this->attendance_final_data_date_from, $this->attendance_final_data_date_to);
+		//$criteria->with = array('shift', 'department', 'employee');
+
+		return $criteria;
+	}
+
+	public function employeeReport()
+	{
+		return new CActiveDataProvider($this, array(
+			'criteria'=> $this->getEmployeeReportCriteria(),
+			'Pagination' => array (
+                  'PageSize' => 200,
+              ),
+
+		));
+	}
+
+	public function export()
+	{
+		return new CActiveDataProvider($this, array(
+			'criteria'=> $this->getSearchCriteria(),
+			'Pagination' => array (
+                  'PageSize' => 2000,
+              ),
+
+		));
+	}
+}
