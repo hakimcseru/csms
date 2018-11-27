@@ -1,0 +1,1692 @@
+2018/11/28 00:18:59 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "js/shortcut.js". in /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php(135): CWebApplication->runController('js/shortcut.js')
+#1 /Applications/MAMP/htdocs/csms/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/csms/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/csms/js/shortcut.js
+HTTP_REFERER=http://localhost/csms/
+---
+2018/11/28 00:18:59 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "js/shortcut.js". in /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php(135): CWebApplication->runController('js/shortcut.js')
+#1 /Applications/MAMP/htdocs/csms/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/csms/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/csms/js/shortcut.js
+HTTP_REFERER=http://localhost/csms/
+---
+2018/11/28 00:19:02 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "js/shortcut.js". in /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php(135): CWebApplication->runController('js/shortcut.js')
+#1 /Applications/MAMP/htdocs/csms/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/csms/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/csms/js/shortcut.js
+HTTP_REFERER=http://localhost/csms/en_us/site/login
+---
+2018/11/28 00:19:05 [error] [exception.CDbException] CDbException: CDbConnection failed to open the DB connection: SQLSTATE[HY000] [1045] Access denied for user 'psms'@'localhost' (using password: YES) in /Applications/MAMP/htdocs/csms/framework/db/CDbConnection.php:382
+Stack trace:
+#0 /Applications/MAMP/htdocs/csms/framework/db/CDbConnection.php(331): CDbConnection->open()
+#1 /Applications/MAMP/htdocs/csms/framework/db/CDbConnection.php(309): CDbConnection->setActive(true)
+#2 /Applications/MAMP/htdocs/csms/framework/base/CModule.php(388): CDbConnection->init()
+#3 /Applications/MAMP/htdocs/csms/framework/base/CApplication.php(431): CModule->getComponent('db')
+#4 /Applications/MAMP/htdocs/csms/framework/db/ar/CActiveRecord.php(615): CApplication->getDb()
+#5 /Applications/MAMP/htdocs/csms/framework/db/ar/CActiveRecord.php(2263): CActiveRecord->getDbConnection()
+#6 /Applications/MAMP/htdocs/csms/framework/db/ar/CActiveRecord.php(379): CActiveRecordMetaData->__construct(Object(AuthUser))
+#7 /Applications/MAMP/htdocs/csms/protected/modules/authenticate/models/AuthUser.php(23): CActiveRecord::model('AuthUser')
+#8 /Applications/MAMP/htdocs/csms/protected/components/UserIdentity.php(44): AuthUser::model()
+#9 /Applications/MAMP/htdocs/csms/protected/models/LoginForm.php(52): UserIdentity->authenticate()
+#10 /Applications/MAMP/htdocs/csms/framework/validators/CInlineValidator.php(43): LoginForm->authenticate('password', Array)
+#11 /Applications/MAMP/htdocs/csms/framework/validators/CValidator.php(197): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#12 /Applications/MAMP/htdocs/csms/framework/base/CModel.php(158): CValidator->validate(Object(LoginForm), Array)
+#13 /Applications/MAMP/htdocs/csms/protected/controllers/SiteController.php(120): CModel->validate()
+#14 /Applications/MAMP/htdocs/csms/framework/web/actions/CInlineAction.php(50): SiteController->actionLogin()
+#15 /Applications/MAMP/htdocs/csms/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#16 /Applications/MAMP/htdocs/csms/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#17 /Applications/MAMP/htdocs/csms/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php(276): CController->run('login')
+#19 /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php(135): CWebApplication->runController('site/login')
+#20 /Applications/MAMP/htdocs/csms/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#21 /Applications/MAMP/htdocs/csms/index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/csms/en_us/site/login
+HTTP_REFERER=http://localhost/csms/en_us/site/login
+---
+2018/11/28 00:21:57 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "js/shortcut.js". in /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php(135): CWebApplication->runController('js/shortcut.js')
+#1 /Applications/MAMP/htdocs/csms/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/csms/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/csms/js/shortcut.js
+HTTP_REFERER=http://localhost/csms/bn/site/index
+---
+2018/11/28 00:21:58 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "js/shortcut.js". in /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php(135): CWebApplication->runController('js/shortcut.js')
+#1 /Applications/MAMP/htdocs/csms/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/csms/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/csms/js/shortcut.js
+HTTP_REFERER=http://localhost/csms/bn/site/index
+---
+2018/11/28 00:22:07 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "js/shortcut.js". in /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php(135): CWebApplication->runController('js/shortcut.js')
+#1 /Applications/MAMP/htdocs/csms/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/csms/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/csms/js/shortcut.js
+HTTP_REFERER=http://localhost/csms/
+---
+2018/11/28 00:22:07 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "js/shortcut.js". in /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php(135): CWebApplication->runController('js/shortcut.js')
+#1 /Applications/MAMP/htdocs/csms/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/csms/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/csms/js/shortcut.js
+HTTP_REFERER=http://localhost/csms/
+---
+2018/11/28 00:22:52 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "js/shortcut.js". in /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php(135): CWebApplication->runController('js/shortcut.js')
+#1 /Applications/MAMP/htdocs/csms/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/csms/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/csms/js/shortcut.js
+HTTP_REFERER=http://localhost/csms/en_us/site/login
+---
+2018/11/28 00:22:53 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "js/shortcut.js". in /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php(135): CWebApplication->runController('js/shortcut.js')
+#1 /Applications/MAMP/htdocs/csms/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/csms/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/csms/js/shortcut.js
+HTTP_REFERER=http://localhost/csms/en_us/site/login
+---
+2018/11/28 00:22:55 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "js/shortcut.js". in /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php(135): CWebApplication->runController('js/shortcut.js')
+#1 /Applications/MAMP/htdocs/csms/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/csms/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/csms/js/shortcut.js
+HTTP_REFERER=http://localhost/csms/en/site/index
+---
+2018/11/28 00:23:10 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "js/shortcut.js". in /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php(135): CWebApplication->runController('js/shortcut.js')
+#1 /Applications/MAMP/htdocs/csms/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/csms/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/csms/js/shortcut.js
+HTTP_REFERER=http://localhost/csms/en/site/index
+---
+2018/11/28 00:23:18 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "js/shortcut.js". in /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php(135): CWebApplication->runController('js/shortcut.js')
+#1 /Applications/MAMP/htdocs/csms/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/csms/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/csms/js/shortcut.js
+HTTP_REFERER=http://localhost/csms/en/site/index
+---
+2018/11/28 00:23:22 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "js/shortcut.js". in /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php(135): CWebApplication->runController('js/shortcut.js')
+#1 /Applications/MAMP/htdocs/csms/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/csms/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/csms/js/shortcut.js
+HTTP_REFERER=http://localhost/csms/
+---
+2018/11/28 00:23:24 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "js/shortcut.js". in /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php(135): CWebApplication->runController('js/shortcut.js')
+#1 /Applications/MAMP/htdocs/csms/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/csms/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/csms/js/shortcut.js
+HTTP_REFERER=http://localhost/csms/en_us/site/login
+---
+2018/11/28 00:23:28 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "js/shortcut.js". in /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php(135): CWebApplication->runController('js/shortcut.js')
+#1 /Applications/MAMP/htdocs/csms/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/csms/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/csms/js/shortcut.js
+HTTP_REFERER=http://localhost/csms/en/site/index
+---
+2018/11/28 00:23:32 [error] [php] Non-static method Bndate::get_year() should not be called statically (/Applications/MAMP/htdocs/csms/protected/models/Student.php:170)
+Stack trace:
+#0 /Applications/MAMP/htdocs/csms/framework/db/ar/CActiveRecord.php(394): model()
+#1 /Applications/MAMP/htdocs/csms/framework/db/ar/CActiveRecord.php(78): Student->getMetaData()
+#2 /Applications/MAMP/htdocs/csms/protected/controllers/StudentController.php(338): Student->__construct()
+#3 /Applications/MAMP/htdocs/csms/framework/web/actions/CInlineAction.php(50): StudentController->actionQcreate()
+#4 /Applications/MAMP/htdocs/csms/framework/web/CController.php(309): CInlineAction->runWithParams()
+#5 /Applications/MAMP/htdocs/csms/framework/web/filters/CFilterChain.php(134): StudentController->runAction()
+#6 /Applications/MAMP/htdocs/csms/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#7 /Applications/MAMP/htdocs/csms/framework/web/CController.php(1146): CAccessControlFilter->filter()
+#8 /Applications/MAMP/htdocs/csms/framework/web/filters/CInlineFilter.php(59): StudentController->filterAccessControl()
+#9 /Applications/MAMP/htdocs/csms/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#10 /Applications/MAMP/htdocs/csms/framework/web/CController.php(292): CFilterChain->run()
+#11 /Applications/MAMP/htdocs/csms/framework/web/CController.php(266): StudentController->runActionWithFilters()
+#12 /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php(276): StudentController->run()
+#13 /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#14 /Applications/MAMP/htdocs/csms/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#15 /Applications/MAMP/htdocs/csms/index.php(13): CWebApplication->run()
+REQUEST_URI=/csms/en/student/qcreate
+in /Applications/MAMP/htdocs/csms/protected/models/Student.php (170)
+in /Applications/MAMP/htdocs/csms/protected/controllers/StudentController.php (338)
+in /Applications/MAMP/htdocs/csms/index.php (13)
+2018/11/28 00:24:38 [error] [php] Non-static method Bndate::get_year() should not be called statically, assuming $this from incompatible context (/Applications/MAMP/htdocs/csms/protected/models/Student.php:170)
+Stack trace:
+#0 /Applications/MAMP/htdocs/csms/framework/db/ar/CActiveRecord.php(394): model()
+#1 /Applications/MAMP/htdocs/csms/framework/db/ar/CActiveRecord.php(78): Student->getMetaData()
+#2 /Applications/MAMP/htdocs/csms/protected/controllers/StudentController.php(338): Student->__construct()
+#3 /Applications/MAMP/htdocs/csms/framework/web/actions/CInlineAction.php(50): StudentController->actionQcreate()
+#4 /Applications/MAMP/htdocs/csms/framework/web/CController.php(309): CInlineAction->runWithParams()
+#5 /Applications/MAMP/htdocs/csms/framework/web/filters/CFilterChain.php(134): StudentController->runAction()
+#6 /Applications/MAMP/htdocs/csms/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#7 /Applications/MAMP/htdocs/csms/framework/web/CController.php(1146): CAccessControlFilter->filter()
+#8 /Applications/MAMP/htdocs/csms/framework/web/filters/CInlineFilter.php(59): StudentController->filterAccessControl()
+#9 /Applications/MAMP/htdocs/csms/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#10 /Applications/MAMP/htdocs/csms/framework/web/CController.php(292): CFilterChain->run()
+#11 /Applications/MAMP/htdocs/csms/framework/web/CController.php(266): StudentController->runActionWithFilters()
+#12 /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php(276): StudentController->run()
+#13 /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#14 /Applications/MAMP/htdocs/csms/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#15 /Applications/MAMP/htdocs/csms/index.php(13): CWebApplication->run()
+REQUEST_URI=/csms/en/student/qcreate
+in /Applications/MAMP/htdocs/csms/protected/models/Student.php (170)
+in /Applications/MAMP/htdocs/csms/protected/controllers/StudentController.php (338)
+in /Applications/MAMP/htdocs/csms/index.php (13)
+2018/11/28 00:24:40 [error] [php] Non-static method Bndate::get_year() should not be called statically, assuming $this from incompatible context (/Applications/MAMP/htdocs/csms/protected/models/Student.php:170)
+Stack trace:
+#0 /Applications/MAMP/htdocs/csms/framework/db/ar/CActiveRecord.php(394): model()
+#1 /Applications/MAMP/htdocs/csms/framework/db/ar/CActiveRecord.php(78): Student->getMetaData()
+#2 /Applications/MAMP/htdocs/csms/protected/controllers/StudentController.php(338): Student->__construct()
+#3 /Applications/MAMP/htdocs/csms/framework/web/actions/CInlineAction.php(50): StudentController->actionQcreate()
+#4 /Applications/MAMP/htdocs/csms/framework/web/CController.php(309): CInlineAction->runWithParams()
+#5 /Applications/MAMP/htdocs/csms/framework/web/filters/CFilterChain.php(134): StudentController->runAction()
+#6 /Applications/MAMP/htdocs/csms/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#7 /Applications/MAMP/htdocs/csms/framework/web/CController.php(1146): CAccessControlFilter->filter()
+#8 /Applications/MAMP/htdocs/csms/framework/web/filters/CInlineFilter.php(59): StudentController->filterAccessControl()
+#9 /Applications/MAMP/htdocs/csms/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#10 /Applications/MAMP/htdocs/csms/framework/web/CController.php(292): CFilterChain->run()
+#11 /Applications/MAMP/htdocs/csms/framework/web/CController.php(266): StudentController->runActionWithFilters()
+#12 /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php(276): StudentController->run()
+#13 /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#14 /Applications/MAMP/htdocs/csms/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#15 /Applications/MAMP/htdocs/csms/index.php(13): CWebApplication->run()
+REQUEST_URI=/csms/en/student/qcreate
+in /Applications/MAMP/htdocs/csms/protected/models/Student.php (170)
+in /Applications/MAMP/htdocs/csms/protected/controllers/StudentController.php (338)
+in /Applications/MAMP/htdocs/csms/index.php (13)
+2018/11/28 00:24:41 [error] [php] Non-static method Bndate::get_year() should not be called statically, assuming $this from incompatible context (/Applications/MAMP/htdocs/csms/protected/models/Student.php:170)
+Stack trace:
+#0 /Applications/MAMP/htdocs/csms/framework/db/ar/CActiveRecord.php(394): model()
+#1 /Applications/MAMP/htdocs/csms/framework/db/ar/CActiveRecord.php(78): Student->getMetaData()
+#2 /Applications/MAMP/htdocs/csms/protected/controllers/StudentController.php(338): Student->__construct()
+#3 /Applications/MAMP/htdocs/csms/framework/web/actions/CInlineAction.php(50): StudentController->actionQcreate()
+#4 /Applications/MAMP/htdocs/csms/framework/web/CController.php(309): CInlineAction->runWithParams()
+#5 /Applications/MAMP/htdocs/csms/framework/web/filters/CFilterChain.php(134): StudentController->runAction()
+#6 /Applications/MAMP/htdocs/csms/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#7 /Applications/MAMP/htdocs/csms/framework/web/CController.php(1146): CAccessControlFilter->filter()
+#8 /Applications/MAMP/htdocs/csms/framework/web/filters/CInlineFilter.php(59): StudentController->filterAccessControl()
+#9 /Applications/MAMP/htdocs/csms/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#10 /Applications/MAMP/htdocs/csms/framework/web/CController.php(292): CFilterChain->run()
+#11 /Applications/MAMP/htdocs/csms/framework/web/CController.php(266): StudentController->runActionWithFilters()
+#12 /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php(276): StudentController->run()
+#13 /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#14 /Applications/MAMP/htdocs/csms/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#15 /Applications/MAMP/htdocs/csms/index.php(13): CWebApplication->run()
+REQUEST_URI=/csms/en/student/qcreate
+in /Applications/MAMP/htdocs/csms/protected/models/Student.php (170)
+in /Applications/MAMP/htdocs/csms/protected/controllers/StudentController.php (338)
+in /Applications/MAMP/htdocs/csms/index.php (13)
+2018/11/28 00:24:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/shortcut.js".' in /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php(135): CWebApplication->runController('js/shortcut.js')
+#1 /Applications/MAMP/htdocs/csms/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/csms/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/csms/js/shortcut.js
+HTTP_REFERER=http://localhost/csms/en/site/index
+---
+2018/11/28 00:24:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/shortcut.js".' in /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php(135): CWebApplication->runController('js/shortcut.js')
+#1 /Applications/MAMP/htdocs/csms/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/csms/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/csms/js/shortcut.js
+HTTP_REFERER=http://localhost/csms/en/site/index
+---
+2018/11/28 00:24:56 [error] [php] Non-static method Bndate::get_year() should not be called statically, assuming $this from incompatible context (/Applications/MAMP/htdocs/csms/protected/models/Student.php:170)
+Stack trace:
+#0 /Applications/MAMP/htdocs/csms/framework/db/ar/CActiveRecord.php(394): model()
+#1 /Applications/MAMP/htdocs/csms/framework/db/ar/CActiveRecord.php(78): Student->getMetaData()
+#2 /Applications/MAMP/htdocs/csms/protected/controllers/StudentController.php(338): Student->__construct()
+#3 /Applications/MAMP/htdocs/csms/framework/web/actions/CInlineAction.php(50): StudentController->actionQcreate()
+#4 /Applications/MAMP/htdocs/csms/framework/web/CController.php(309): CInlineAction->runWithParams()
+#5 /Applications/MAMP/htdocs/csms/framework/web/filters/CFilterChain.php(134): StudentController->runAction()
+#6 /Applications/MAMP/htdocs/csms/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#7 /Applications/MAMP/htdocs/csms/framework/web/CController.php(1146): CAccessControlFilter->filter()
+#8 /Applications/MAMP/htdocs/csms/framework/web/filters/CInlineFilter.php(59): StudentController->filterAccessControl()
+#9 /Applications/MAMP/htdocs/csms/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#10 /Applications/MAMP/htdocs/csms/framework/web/CController.php(292): CFilterChain->run()
+#11 /Applications/MAMP/htdocs/csms/framework/web/CController.php(266): StudentController->runActionWithFilters()
+#12 /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php(276): StudentController->run()
+#13 /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#14 /Applications/MAMP/htdocs/csms/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#15 /Applications/MAMP/htdocs/csms/index.php(13): CWebApplication->run()
+REQUEST_URI=/csms/en/student/qcreate
+in /Applications/MAMP/htdocs/csms/protected/models/Student.php (170)
+in /Applications/MAMP/htdocs/csms/protected/controllers/StudentController.php (338)
+in /Applications/MAMP/htdocs/csms/index.php (13)
+2018/11/28 00:24:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/shortcut.js".' in /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php(135): CWebApplication->runController('js/shortcut.js')
+#1 /Applications/MAMP/htdocs/csms/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/csms/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/csms/js/shortcut.js
+HTTP_REFERER=http://localhost/csms/en/site/index
+---
+2018/11/28 00:38:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/shortcut.js".' in /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php(135): CWebApplication->runController('js/shortcut.js')
+#1 /Applications/MAMP/htdocs/csms/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/csms/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/csms/js/shortcut.js
+HTTP_REFERER=http://localhost/csms/
+---
+2018/11/28 00:38:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/shortcut.js".' in /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php(135): CWebApplication->runController('js/shortcut.js')
+#1 /Applications/MAMP/htdocs/csms/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/csms/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/csms/js/shortcut.js
+HTTP_REFERER=http://localhost/csms/
+---
+2018/11/28 00:38:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/shortcut.js".' in /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php(135): CWebApplication->runController('js/shortcut.js')
+#1 /Applications/MAMP/htdocs/csms/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/csms/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/csms/js/shortcut.js
+HTTP_REFERER=http://localhost/csms/
+---
+2018/11/28 00:38:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/shortcut.js".' in /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php(135): CWebApplication->runController('js/shortcut.js')
+#1 /Applications/MAMP/htdocs/csms/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/csms/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/csms/js/shortcut.js
+HTTP_REFERER=http://localhost/csms/
+---
+2018/11/28 00:38:58 [error] [php] Non-static method Bndate::get_year() should not be called statically, assuming $this from incompatible context (/Applications/MAMP/htdocs/csms/protected/models/Student.php:170)
+Stack trace:
+#0 /Applications/MAMP/htdocs/csms/framework/db/ar/CActiveRecord.php(394): model()
+#1 /Applications/MAMP/htdocs/csms/framework/db/ar/CActiveRecord.php(78): Student->getMetaData()
+#2 /Applications/MAMP/htdocs/csms/protected/controllers/StudentController.php(338): Student->__construct()
+#3 /Applications/MAMP/htdocs/csms/framework/web/actions/CInlineAction.php(50): StudentController->actionQcreate()
+#4 /Applications/MAMP/htdocs/csms/framework/web/CController.php(309): CInlineAction->runWithParams()
+#5 /Applications/MAMP/htdocs/csms/framework/web/filters/CFilterChain.php(134): StudentController->runAction()
+#6 /Applications/MAMP/htdocs/csms/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#7 /Applications/MAMP/htdocs/csms/framework/web/CController.php(1146): CAccessControlFilter->filter()
+#8 /Applications/MAMP/htdocs/csms/framework/web/filters/CInlineFilter.php(59): StudentController->filterAccessControl()
+#9 /Applications/MAMP/htdocs/csms/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#10 /Applications/MAMP/htdocs/csms/framework/web/CController.php(292): CFilterChain->run()
+#11 /Applications/MAMP/htdocs/csms/framework/web/CController.php(266): StudentController->runActionWithFilters()
+#12 /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php(276): StudentController->run()
+#13 /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#14 /Applications/MAMP/htdocs/csms/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#15 /Applications/MAMP/htdocs/csms/index.php(13): CWebApplication->run()
+REQUEST_URI=/csms/en_us/student/qcreate
+in /Applications/MAMP/htdocs/csms/protected/models/Student.php (170)
+in /Applications/MAMP/htdocs/csms/protected/controllers/StudentController.php (338)
+in /Applications/MAMP/htdocs/csms/index.php (13)
+2018/11/28 00:39:58 [error] [php] Non-static method Bndate::get_year() should not be called statically, assuming $this from incompatible context (/Applications/MAMP/htdocs/csms/protected/models/Student.php:170)
+Stack trace:
+#0 /Applications/MAMP/htdocs/csms/framework/db/ar/CActiveRecord.php(394): model()
+#1 /Applications/MAMP/htdocs/csms/framework/db/ar/CActiveRecord.php(78): Student->getMetaData()
+#2 /Applications/MAMP/htdocs/csms/protected/controllers/StudentController.php(338): Student->__construct()
+#3 /Applications/MAMP/htdocs/csms/framework/web/actions/CInlineAction.php(50): StudentController->actionQcreate()
+#4 /Applications/MAMP/htdocs/csms/framework/web/CController.php(309): CInlineAction->runWithParams()
+#5 /Applications/MAMP/htdocs/csms/framework/web/filters/CFilterChain.php(134): StudentController->runAction()
+#6 /Applications/MAMP/htdocs/csms/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#7 /Applications/MAMP/htdocs/csms/framework/web/CController.php(1146): CAccessControlFilter->filter()
+#8 /Applications/MAMP/htdocs/csms/framework/web/filters/CInlineFilter.php(59): StudentController->filterAccessControl()
+#9 /Applications/MAMP/htdocs/csms/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#10 /Applications/MAMP/htdocs/csms/framework/web/CController.php(292): CFilterChain->run()
+#11 /Applications/MAMP/htdocs/csms/framework/web/CController.php(266): StudentController->runActionWithFilters()
+#12 /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php(276): StudentController->run()
+#13 /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#14 /Applications/MAMP/htdocs/csms/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#15 /Applications/MAMP/htdocs/csms/index.php(13): CWebApplication->run()
+REQUEST_URI=/csms/en_us/student/qcreate
+in /Applications/MAMP/htdocs/csms/protected/models/Student.php (170)
+in /Applications/MAMP/htdocs/csms/protected/controllers/StudentController.php (338)
+in /Applications/MAMP/htdocs/csms/index.php (13)
+2018/11/28 00:40:02 [error] [php] Non-static method Bndate::get_year() should not be called statically, assuming $this from incompatible context (/Applications/MAMP/htdocs/csms/protected/models/Student.php:170)
+Stack trace:
+#0 /Applications/MAMP/htdocs/csms/framework/db/ar/CActiveRecord.php(394): model()
+#1 /Applications/MAMP/htdocs/csms/framework/db/ar/CActiveRecord.php(78): Student->getMetaData()
+#2 /Applications/MAMP/htdocs/csms/protected/controllers/StudentController.php(338): Student->__construct()
+#3 /Applications/MAMP/htdocs/csms/framework/web/actions/CInlineAction.php(50): StudentController->actionQcreate()
+#4 /Applications/MAMP/htdocs/csms/framework/web/CController.php(309): CInlineAction->runWithParams()
+#5 /Applications/MAMP/htdocs/csms/framework/web/filters/CFilterChain.php(134): StudentController->runAction()
+#6 /Applications/MAMP/htdocs/csms/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#7 /Applications/MAMP/htdocs/csms/framework/web/CController.php(1146): CAccessControlFilter->filter()
+#8 /Applications/MAMP/htdocs/csms/framework/web/filters/CInlineFilter.php(59): StudentController->filterAccessControl()
+#9 /Applications/MAMP/htdocs/csms/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#10 /Applications/MAMP/htdocs/csms/framework/web/CController.php(292): CFilterChain->run()
+#11 /Applications/MAMP/htdocs/csms/framework/web/CController.php(266): StudentController->runActionWithFilters()
+#12 /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php(276): StudentController->run()
+#13 /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#14 /Applications/MAMP/htdocs/csms/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#15 /Applications/MAMP/htdocs/csms/index.php(13): CWebApplication->run()
+REQUEST_URI=/csms/en_us/student/qcreate
+in /Applications/MAMP/htdocs/csms/protected/models/Student.php (170)
+in /Applications/MAMP/htdocs/csms/protected/controllers/StudentController.php (338)
+in /Applications/MAMP/htdocs/csms/index.php (13)
+2018/11/28 00:40:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/shortcut.js".' in /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php(135): CWebApplication->runController('js/shortcut.js')
+#1 /Applications/MAMP/htdocs/csms/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/csms/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/csms/js/shortcut.js
+HTTP_REFERER=http://localhost/csms/en_us/student/qcreate
+---
+2018/11/28 00:40:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/shortcut.js".' in /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php(135): CWebApplication->runController('js/shortcut.js')
+#1 /Applications/MAMP/htdocs/csms/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/csms/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/csms/js/shortcut.js
+HTTP_REFERER=http://localhost/csms/en_us/student/qcreate
+---
+2018/11/28 00:40:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/shortcut.js".' in /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php(135): CWebApplication->runController('js/shortcut.js')
+#1 /Applications/MAMP/htdocs/csms/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/csms/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/csms/js/shortcut.js
+HTTP_REFERER=http://localhost/csms/en_us/student/qcreate
+---
+2018/11/28 00:40:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/shortcut.js".' in /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php(135): CWebApplication->runController('js/shortcut.js')
+#1 /Applications/MAMP/htdocs/csms/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/csms/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/csms/js/shortcut.js
+HTTP_REFERER=http://localhost/csms/en_us/student/qcreate
+---
+2018/11/28 00:40:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/shortcut.js".' in /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php(135): CWebApplication->runController('js/shortcut.js')
+#1 /Applications/MAMP/htdocs/csms/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/csms/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/csms/js/shortcut.js
+HTTP_REFERER=http://localhost/csms/en/student/qcreate
+---
+2018/11/28 00:40:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/shortcut.js".' in /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php(135): CWebApplication->runController('js/shortcut.js')
+#1 /Applications/MAMP/htdocs/csms/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/csms/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/csms/js/shortcut.js
+HTTP_REFERER=http://localhost/csms/en/student/rqcreate
+---
+2018/11/28 00:40:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/shortcut.js".' in /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php(135): CWebApplication->runController('js/shortcut.js')
+#1 /Applications/MAMP/htdocs/csms/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/csms/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/csms/js/shortcut.js
+HTTP_REFERER=http://localhost/csms/en/student/examres
+---
+2018/11/28 00:41:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/shortcut.js".' in /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php(135): CWebApplication->runController('js/shortcut.js')
+#1 /Applications/MAMP/htdocs/csms/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/csms/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/csms/js/shortcut.js
+HTTP_REFERER=http://localhost/csms/en/student/qcreate
+---
+2018/11/28 00:50:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/shortcut.js".' in /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php(135): CWebApplication->runController('js/shortcut.js')
+#1 /Applications/MAMP/htdocs/csms/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/csms/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/csms/js/shortcut.js
+HTTP_REFERER=http://localhost/csms/en/student/rqcreate
+---
+2018/11/28 00:50:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/shortcut.js".' in /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php(135): CWebApplication->runController('js/shortcut.js')
+#1 /Applications/MAMP/htdocs/csms/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/csms/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/csms/js/shortcut.js
+HTTP_REFERER=http://localhost/csms/en/student/rqcreate
+---
+2018/11/28 00:50:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/shortcut.js".' in /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php(135): CWebApplication->runController('js/shortcut.js')
+#1 /Applications/MAMP/htdocs/csms/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/csms/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/csms/js/shortcut.js
+HTTP_REFERER=http://localhost/csms/en/student/examres
+---
+2018/11/28 00:50:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/shortcut.js".' in /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php(135): CWebApplication->runController('js/shortcut.js')
+#1 /Applications/MAMP/htdocs/csms/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/csms/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/csms/js/shortcut.js
+HTTP_REFERER=http://localhost/csms/en/student/examres
+---
+2018/11/28 00:50:10 [error] [php] Trying to get property of non-object (/Applications/MAMP/htdocs/csms/framework/base/CComponent.php(607) : eval()'d code:1)
+Stack trace:
+#0 /Applications/MAMP/htdocs/csms/framework/zii/widgets/grid/CGridColumn.php(138): BootDataColumn->renderDataCellContent()
+#1 /Applications/MAMP/htdocs/csms/framework/zii/widgets/grid/CGridView.php(517): BootDataColumn->renderDataCell()
+#2 /Applications/MAMP/htdocs/csms/framework/zii/widgets/grid/CGridView.php(490): BootGridView->renderTableRow()
+#3 /Applications/MAMP/htdocs/csms/framework/zii/widgets/grid/CGridView.php(400): BootGridView->renderTableBody()
+#4 /Applications/MAMP/htdocs/csms/framework/zii/widgets/CBaseListView.php(158): BootGridView->renderItems()
+#5 unknown(0): BootGridView->renderSection()
+#6 /Applications/MAMP/htdocs/csms/framework/zii/widgets/CBaseListView.php(141): preg_replace_callback()
+#7 /Applications/MAMP/htdocs/csms/framework/zii/widgets/CBaseListView.php(126): BootGridView->renderContent()
+#8 /Applications/MAMP/htdocs/csms/framework/web/CBaseController.php(174): BootGridView->run()
+#9 /Applications/MAMP/htdocs/csms/protected/views/studentEnrollmentInfo/admin.php(132): StudentEnrollmentInfoController->widget()
+#10 /Applications/MAMP/htdocs/csms/framework/web/CBaseController.php(127): require()
+#11 /Applications/MAMP/htdocs/csms/framework/web/CBaseController.php(96): StudentEnrollmentInfoController->renderInternal()
+#12 /Applications/MAMP/htdocs/csms/framework/web/CController.php(870): StudentEnrollmentInfoController->renderFile()
+#13 /Applications/MAMP/htdocs/csms/framework/web/CController.php(783): StudentEnrollmentInfoController->renderPartial()
+#14 /Applications/MAMP/htdocs/csms/protected/controllers/StudentEnrollmentInfoController.php(401): StudentEnrollmentInfoController->render()
+#15 /Applications/MAMP/htdocs/csms/framework/web/actions/CInlineAction.php(50): StudentEnrollmentInfoController->actionAdmin()
+#16 /Applications/MAMP/htdocs/csms/framework/web/CController.php(309): CInlineAction->runWithParams()
+#17 /Applications/MAMP/htdocs/csms/framework/web/filters/CFilterChain.php(134): StudentEnrollmentInfoController->runAction()
+#18 /Applications/MAMP/htdocs/csms/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#19 /Applications/MAMP/htdocs/csms/framework/web/CController.php(1146): CAccessControlFilter->filter()
+#20 /Applications/MAMP/htdocs/csms/framework/web/filters/CInlineFilter.php(59): StudentEnrollmentInfoController->filterAccessControl()
+#21 /Applications/MAMP/htdocs/csms/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#22 /Applications/MAMP/htdocs/csms/framework/web/CController.php(292): CFilterChain->run()
+#23 /Applications/MAMP/htdocs/csms/framework/web/CController.php(266): StudentEnrollmentInfoController->runActionWithFilters()
+#24 /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php(276): StudentEnrollmentInfoController->run()
+#25 /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#26 /Applications/MAMP/htdocs/csms/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#27 /Applications/MAMP/htdocs/csms/index.php(13): CWebApplication->run()
+REQUEST_URI=/csms/en/studentEnrollmentInfo/admin
+in /Applications/MAMP/htdocs/csms/protected/views/studentEnrollmentInfo/admin.php (132)
+in /Applications/MAMP/htdocs/csms/protected/controllers/StudentEnrollmentInfoController.php (401)
+in /Applications/MAMP/htdocs/csms/index.php (13)
+2018/11/28 00:50:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/shortcut.js".' in /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php(135): CWebApplication->runController('js/shortcut.js')
+#1 /Applications/MAMP/htdocs/csms/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/csms/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/csms/js/shortcut.js
+HTTP_REFERER=http://localhost/csms/en/student/examres
+---
+2018/11/28 00:50:18 [error] [php] Trying to get property of non-object (/Applications/MAMP/htdocs/csms/framework/base/CComponent.php(607) : eval()'d code:1)
+Stack trace:
+#0 /Applications/MAMP/htdocs/csms/framework/zii/widgets/grid/CGridColumn.php(138): BootDataColumn->renderDataCellContent()
+#1 /Applications/MAMP/htdocs/csms/framework/zii/widgets/grid/CGridView.php(517): BootDataColumn->renderDataCell()
+#2 /Applications/MAMP/htdocs/csms/framework/zii/widgets/grid/CGridView.php(490): BootGridView->renderTableRow()
+#3 /Applications/MAMP/htdocs/csms/framework/zii/widgets/grid/CGridView.php(400): BootGridView->renderTableBody()
+#4 /Applications/MAMP/htdocs/csms/framework/zii/widgets/CBaseListView.php(158): BootGridView->renderItems()
+#5 unknown(0): BootGridView->renderSection()
+#6 /Applications/MAMP/htdocs/csms/framework/zii/widgets/CBaseListView.php(141): preg_replace_callback()
+#7 /Applications/MAMP/htdocs/csms/framework/zii/widgets/CBaseListView.php(126): BootGridView->renderContent()
+#8 /Applications/MAMP/htdocs/csms/framework/web/CBaseController.php(174): BootGridView->run()
+#9 /Applications/MAMP/htdocs/csms/protected/views/studentEnrollmentInfo/admin.php(132): StudentEnrollmentInfoController->widget()
+#10 /Applications/MAMP/htdocs/csms/framework/web/CBaseController.php(127): require()
+#11 /Applications/MAMP/htdocs/csms/framework/web/CBaseController.php(96): StudentEnrollmentInfoController->renderInternal()
+#12 /Applications/MAMP/htdocs/csms/framework/web/CController.php(870): StudentEnrollmentInfoController->renderFile()
+#13 /Applications/MAMP/htdocs/csms/framework/web/CController.php(783): StudentEnrollmentInfoController->renderPartial()
+#14 /Applications/MAMP/htdocs/csms/protected/controllers/StudentEnrollmentInfoController.php(401): StudentEnrollmentInfoController->render()
+#15 /Applications/MAMP/htdocs/csms/framework/web/actions/CInlineAction.php(50): StudentEnrollmentInfoController->actionAdmin()
+#16 /Applications/MAMP/htdocs/csms/framework/web/CController.php(309): CInlineAction->runWithParams()
+#17 /Applications/MAMP/htdocs/csms/framework/web/filters/CFilterChain.php(134): StudentEnrollmentInfoController->runAction()
+#18 /Applications/MAMP/htdocs/csms/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#19 /Applications/MAMP/htdocs/csms/framework/web/CController.php(1146): CAccessControlFilter->filter()
+#20 /Applications/MAMP/htdocs/csms/framework/web/filters/CInlineFilter.php(59): StudentEnrollmentInfoController->filterAccessControl()
+#21 /Applications/MAMP/htdocs/csms/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#22 /Applications/MAMP/htdocs/csms/framework/web/CController.php(292): CFilterChain->run()
+#23 /Applications/MAMP/htdocs/csms/framework/web/CController.php(266): StudentEnrollmentInfoController->runActionWithFilters()
+#24 /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php(276): StudentEnrollmentInfoController->run()
+#25 /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#26 /Applications/MAMP/htdocs/csms/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#27 /Applications/MAMP/htdocs/csms/index.php(13): CWebApplication->run()
+REQUEST_URI=/csms/en/studentEnrollmentInfo/admin
+in /Applications/MAMP/htdocs/csms/protected/views/studentEnrollmentInfo/admin.php (132)
+in /Applications/MAMP/htdocs/csms/protected/controllers/StudentEnrollmentInfoController.php (401)
+in /Applications/MAMP/htdocs/csms/index.php (13)
+2018/11/28 01:06:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/shortcut.js".' in /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php(135): CWebApplication->runController('js/shortcut.js')
+#1 /Applications/MAMP/htdocs/csms/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/csms/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/csms/js/shortcut.js
+HTTP_REFERER=http://localhost/csms/en/student/qcreate
+---
+2018/11/28 01:06:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/shortcut.js".' in /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php(135): CWebApplication->runController('js/shortcut.js')
+#1 /Applications/MAMP/htdocs/csms/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/csms/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/csms/js/shortcut.js
+HTTP_REFERER=http://localhost/csms/en/student/qcreate
+---
+2018/11/28 01:07:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/shortcut.js".' in /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php(135): CWebApplication->runController('js/shortcut.js')
+#1 /Applications/MAMP/htdocs/csms/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/csms/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/csms/js/shortcut.js
+HTTP_REFERER=http://localhost/csms/en/student/rqcreate
+---
+2018/11/28 01:07:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/shortcut.js".' in /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php(135): CWebApplication->runController('js/shortcut.js')
+#1 /Applications/MAMP/htdocs/csms/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/csms/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/csms/js/shortcut.js
+HTTP_REFERER=http://localhost/csms/en/student/examres
+---
+2018/11/28 01:07:04 [error] [php] Trying to get property of non-object (/Applications/MAMP/htdocs/csms/framework/base/CComponent.php(607) : eval()'d code:1)
+Stack trace:
+#0 /Applications/MAMP/htdocs/csms/framework/zii/widgets/grid/CGridColumn.php(138): BootDataColumn->renderDataCellContent()
+#1 /Applications/MAMP/htdocs/csms/framework/zii/widgets/grid/CGridView.php(517): BootDataColumn->renderDataCell()
+#2 /Applications/MAMP/htdocs/csms/framework/zii/widgets/grid/CGridView.php(490): BootGridView->renderTableRow()
+#3 /Applications/MAMP/htdocs/csms/framework/zii/widgets/grid/CGridView.php(400): BootGridView->renderTableBody()
+#4 /Applications/MAMP/htdocs/csms/framework/zii/widgets/CBaseListView.php(158): BootGridView->renderItems()
+#5 unknown(0): BootGridView->renderSection()
+#6 /Applications/MAMP/htdocs/csms/framework/zii/widgets/CBaseListView.php(141): preg_replace_callback()
+#7 /Applications/MAMP/htdocs/csms/framework/zii/widgets/CBaseListView.php(126): BootGridView->renderContent()
+#8 /Applications/MAMP/htdocs/csms/framework/web/CBaseController.php(174): BootGridView->run()
+#9 /Applications/MAMP/htdocs/csms/protected/views/studentEnrollmentInfo/admin.php(132): StudentEnrollmentInfoController->widget()
+#10 /Applications/MAMP/htdocs/csms/framework/web/CBaseController.php(127): require()
+#11 /Applications/MAMP/htdocs/csms/framework/web/CBaseController.php(96): StudentEnrollmentInfoController->renderInternal()
+#12 /Applications/MAMP/htdocs/csms/framework/web/CController.php(870): StudentEnrollmentInfoController->renderFile()
+#13 /Applications/MAMP/htdocs/csms/framework/web/CController.php(783): StudentEnrollmentInfoController->renderPartial()
+#14 /Applications/MAMP/htdocs/csms/protected/controllers/StudentEnrollmentInfoController.php(401): StudentEnrollmentInfoController->render()
+#15 /Applications/MAMP/htdocs/csms/framework/web/actions/CInlineAction.php(50): StudentEnrollmentInfoController->actionAdmin()
+#16 /Applications/MAMP/htdocs/csms/framework/web/CController.php(309): CInlineAction->runWithParams()
+#17 /Applications/MAMP/htdocs/csms/framework/web/filters/CFilterChain.php(134): StudentEnrollmentInfoController->runAction()
+#18 /Applications/MAMP/htdocs/csms/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#19 /Applications/MAMP/htdocs/csms/framework/web/CController.php(1146): CAccessControlFilter->filter()
+#20 /Applications/MAMP/htdocs/csms/framework/web/filters/CInlineFilter.php(59): StudentEnrollmentInfoController->filterAccessControl()
+#21 /Applications/MAMP/htdocs/csms/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#22 /Applications/MAMP/htdocs/csms/framework/web/CController.php(292): CFilterChain->run()
+#23 /Applications/MAMP/htdocs/csms/framework/web/CController.php(266): StudentEnrollmentInfoController->runActionWithFilters()
+#24 /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php(276): StudentEnrollmentInfoController->run()
+#25 /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#26 /Applications/MAMP/htdocs/csms/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#27 /Applications/MAMP/htdocs/csms/index.php(13): CWebApplication->run()
+REQUEST_URI=/csms/en/studentEnrollmentInfo/admin
+in /Applications/MAMP/htdocs/csms/protected/views/studentEnrollmentInfo/admin.php (132)
+in /Applications/MAMP/htdocs/csms/protected/controllers/StudentEnrollmentInfoController.php (401)
+in /Applications/MAMP/htdocs/csms/index.php (13)
+2018/11/28 01:18:45 [error] [php] Trying to get property of non-object (/Applications/MAMP/htdocs/csms/framework/base/CComponent.php(607) : eval()'d code:1)
+Stack trace:
+#0 /Applications/MAMP/htdocs/csms/framework/zii/widgets/grid/CGridColumn.php(138): BootDataColumn->renderDataCellContent()
+#1 /Applications/MAMP/htdocs/csms/framework/zii/widgets/grid/CGridView.php(517): BootDataColumn->renderDataCell()
+#2 /Applications/MAMP/htdocs/csms/framework/zii/widgets/grid/CGridView.php(490): BootGridView->renderTableRow()
+#3 /Applications/MAMP/htdocs/csms/framework/zii/widgets/grid/CGridView.php(400): BootGridView->renderTableBody()
+#4 /Applications/MAMP/htdocs/csms/framework/zii/widgets/CBaseListView.php(158): BootGridView->renderItems()
+#5 unknown(0): BootGridView->renderSection()
+#6 /Applications/MAMP/htdocs/csms/framework/zii/widgets/CBaseListView.php(141): preg_replace_callback()
+#7 /Applications/MAMP/htdocs/csms/framework/zii/widgets/CBaseListView.php(126): BootGridView->renderContent()
+#8 /Applications/MAMP/htdocs/csms/framework/web/CBaseController.php(174): BootGridView->run()
+#9 /Applications/MAMP/htdocs/csms/protected/views/studentEnrollmentInfo/admin.php(132): StudentEnrollmentInfoController->widget()
+#10 /Applications/MAMP/htdocs/csms/framework/web/CBaseController.php(127): require()
+#11 /Applications/MAMP/htdocs/csms/framework/web/CBaseController.php(96): StudentEnrollmentInfoController->renderInternal()
+#12 /Applications/MAMP/htdocs/csms/framework/web/CController.php(870): StudentEnrollmentInfoController->renderFile()
+#13 /Applications/MAMP/htdocs/csms/framework/web/CController.php(783): StudentEnrollmentInfoController->renderPartial()
+#14 /Applications/MAMP/htdocs/csms/protected/controllers/StudentEnrollmentInfoController.php(401): StudentEnrollmentInfoController->render()
+#15 /Applications/MAMP/htdocs/csms/framework/web/actions/CInlineAction.php(50): StudentEnrollmentInfoController->actionAdmin()
+#16 /Applications/MAMP/htdocs/csms/framework/web/CController.php(309): CInlineAction->runWithParams()
+#17 /Applications/MAMP/htdocs/csms/framework/web/filters/CFilterChain.php(134): StudentEnrollmentInfoController->runAction()
+#18 /Applications/MAMP/htdocs/csms/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#19 /Applications/MAMP/htdocs/csms/framework/web/CController.php(1146): CAccessControlFilter->filter()
+#20 /Applications/MAMP/htdocs/csms/framework/web/filters/CInlineFilter.php(59): StudentEnrollmentInfoController->filterAccessControl()
+#21 /Applications/MAMP/htdocs/csms/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#22 /Applications/MAMP/htdocs/csms/framework/web/CController.php(292): CFilterChain->run()
+#23 /Applications/MAMP/htdocs/csms/framework/web/CController.php(266): StudentEnrollmentInfoController->runActionWithFilters()
+#24 /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php(276): StudentEnrollmentInfoController->run()
+#25 /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#26 /Applications/MAMP/htdocs/csms/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#27 /Applications/MAMP/htdocs/csms/index.php(13): CWebApplication->run()
+REQUEST_URI=/csms/en/studentEnrollmentInfo/admin
+in /Applications/MAMP/htdocs/csms/protected/views/studentEnrollmentInfo/admin.php (132)
+in /Applications/MAMP/htdocs/csms/protected/controllers/StudentEnrollmentInfoController.php (401)
+in /Applications/MAMP/htdocs/csms/index.php (13)
+2018/11/28 01:18:57 [error] [php] Trying to get property of non-object (/Applications/MAMP/htdocs/csms/framework/base/CComponent.php(607) : eval()'d code:1)
+Stack trace:
+#0 /Applications/MAMP/htdocs/csms/framework/zii/widgets/grid/CGridColumn.php(138): BootDataColumn->renderDataCellContent()
+#1 /Applications/MAMP/htdocs/csms/framework/zii/widgets/grid/CGridView.php(517): BootDataColumn->renderDataCell()
+#2 /Applications/MAMP/htdocs/csms/framework/zii/widgets/grid/CGridView.php(490): BootGridView->renderTableRow()
+#3 /Applications/MAMP/htdocs/csms/framework/zii/widgets/grid/CGridView.php(400): BootGridView->renderTableBody()
+#4 /Applications/MAMP/htdocs/csms/framework/zii/widgets/CBaseListView.php(158): BootGridView->renderItems()
+#5 unknown(0): BootGridView->renderSection()
+#6 /Applications/MAMP/htdocs/csms/framework/zii/widgets/CBaseListView.php(141): preg_replace_callback()
+#7 /Applications/MAMP/htdocs/csms/framework/zii/widgets/CBaseListView.php(126): BootGridView->renderContent()
+#8 /Applications/MAMP/htdocs/csms/framework/web/CBaseController.php(174): BootGridView->run()
+#9 /Applications/MAMP/htdocs/csms/protected/views/studentEnrollmentInfo/admin.php(132): StudentEnrollmentInfoController->widget()
+#10 /Applications/MAMP/htdocs/csms/framework/web/CBaseController.php(127): require()
+#11 /Applications/MAMP/htdocs/csms/framework/web/CBaseController.php(96): StudentEnrollmentInfoController->renderInternal()
+#12 /Applications/MAMP/htdocs/csms/framework/web/CController.php(870): StudentEnrollmentInfoController->renderFile()
+#13 /Applications/MAMP/htdocs/csms/framework/web/CController.php(783): StudentEnrollmentInfoController->renderPartial()
+#14 /Applications/MAMP/htdocs/csms/protected/controllers/StudentEnrollmentInfoController.php(401): StudentEnrollmentInfoController->render()
+#15 /Applications/MAMP/htdocs/csms/framework/web/actions/CInlineAction.php(50): StudentEnrollmentInfoController->actionAdmin()
+#16 /Applications/MAMP/htdocs/csms/framework/web/CController.php(309): CInlineAction->runWithParams()
+#17 /Applications/MAMP/htdocs/csms/framework/web/filters/CFilterChain.php(134): StudentEnrollmentInfoController->runAction()
+#18 /Applications/MAMP/htdocs/csms/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#19 /Applications/MAMP/htdocs/csms/framework/web/CController.php(1146): CAccessControlFilter->filter()
+#20 /Applications/MAMP/htdocs/csms/framework/web/filters/CInlineFilter.php(59): StudentEnrollmentInfoController->filterAccessControl()
+#21 /Applications/MAMP/htdocs/csms/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#22 /Applications/MAMP/htdocs/csms/framework/web/CController.php(292): CFilterChain->run()
+#23 /Applications/MAMP/htdocs/csms/framework/web/CController.php(266): StudentEnrollmentInfoController->runActionWithFilters()
+#24 /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php(276): StudentEnrollmentInfoController->run()
+#25 /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#26 /Applications/MAMP/htdocs/csms/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#27 /Applications/MAMP/htdocs/csms/index.php(13): CWebApplication->run()
+REQUEST_URI=/csms/en/studentEnrollmentInfo/admin
+in /Applications/MAMP/htdocs/csms/protected/views/studentEnrollmentInfo/admin.php (132)
+in /Applications/MAMP/htdocs/csms/protected/controllers/StudentEnrollmentInfoController.php (401)
+in /Applications/MAMP/htdocs/csms/index.php (13)
+2018/11/28 01:19:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/student/8070 - Abritti.jpg".' in /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php(135): CWebApplication->runController('images/student/...')
+#1 /Applications/MAMP/htdocs/csms/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/csms/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/csms/images/student/8070%20-%20Abritti.jpg
+HTTP_REFERER=http://localhost/csms/en/studentEnrollmentInfo/admin
+---
+2018/11/28 01:19:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/student/10008069.jpg".' in /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php(135): CWebApplication->runController('images/student/...')
+#1 /Applications/MAMP/htdocs/csms/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/csms/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/csms/images/student/10008069.jpg
+HTTP_REFERER=http://localhost/csms/en/studentEnrollmentInfo/admin
+---
+2018/11/28 01:19:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/shortcut.js".' in /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php(135): CWebApplication->runController('js/shortcut.js')
+#1 /Applications/MAMP/htdocs/csms/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/csms/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/csms/js/shortcut.js
+HTTP_REFERER=http://localhost/csms/en/studentEnrollmentInfo/admin
+---
+2018/11/28 01:19:26 [error] [php] Cannot modify header information - headers already sent by (output started at /Applications/MAMP/htdocs/csms/protected/controllers/StudentController.php:1) (/Applications/MAMP/htdocs/csms/framework/web/CHttpRequest.php:1046)
+Stack trace:
+#0 /Applications/MAMP/htdocs/csms/framework/web/CHttpRequest.php(879): CCookieCollection->add()
+#1 /Applications/MAMP/htdocs/csms/framework/base/CComponent.php(112): CHttpRequest->getCsrfToken()
+#2 /Applications/MAMP/htdocs/csms/protected/extensions/EAjaxUpload/EAjaxUpload.php(86): CHttpRequest->__get()
+#3 /Applications/MAMP/htdocs/csms/framework/web/CBaseController.php(174): EAjaxUpload->run()
+#4 /Applications/MAMP/htdocs/csms/protected/views/student/_upload.php(35): StudentController->widget()
+#5 /Applications/MAMP/htdocs/csms/framework/web/CBaseController.php(127): require()
+#6 /Applications/MAMP/htdocs/csms/framework/web/CBaseController.php(96): StudentController->renderInternal()
+#7 /Applications/MAMP/htdocs/csms/framework/web/CController.php(870): StudentController->renderFile()
+#8 /Applications/MAMP/htdocs/csms/protected/views/student/_form.php(36): StudentController->renderPartial()
+#9 /Applications/MAMP/htdocs/csms/framework/web/CBaseController.php(127): require()
+#10 /Applications/MAMP/htdocs/csms/framework/web/CBaseController.php(96): StudentController->renderInternal()
+#11 /Applications/MAMP/htdocs/csms/framework/web/CController.php(870): StudentController->renderFile()
+#12 /Applications/MAMP/htdocs/csms/protected/views/student/update.php(18): StudentController->renderPartial()
+#13 /Applications/MAMP/htdocs/csms/framework/web/CBaseController.php(127): require()
+#14 /Applications/MAMP/htdocs/csms/framework/web/CBaseController.php(96): StudentController->renderInternal()
+#15 /Applications/MAMP/htdocs/csms/framework/web/CController.php(870): StudentController->renderFile()
+#16 /Applications/MAMP/htdocs/csms/framework/web/CController.php(783): StudentController->renderPartial()
+#17 /Applications/MAMP/htdocs/csms/protected/controllers/StudentController.php(827): StudentController->render()
+#18 unknown(0): StudentController->actionUpdate()
+#19 /Applications/MAMP/htdocs/csms/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs()
+#20 /Applications/MAMP/htdocs/csms/framework/web/actions/CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#21 /Applications/MAMP/htdocs/csms/framework/web/CController.php(309): CInlineAction->runWithParams()
+#22 /Applications/MAMP/htdocs/csms/framework/web/filters/CFilterChain.php(134): StudentController->runAction()
+#23 /Applications/MAMP/htdocs/csms/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#24 /Applications/MAMP/htdocs/csms/framework/web/CController.php(1146): CAccessControlFilter->filter()
+#25 /Applications/MAMP/htdocs/csms/framework/web/filters/CInlineFilter.php(59): StudentController->filterAccessControl()
+#26 /Applications/MAMP/htdocs/csms/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#27 /Applications/MAMP/htdocs/csms/framework/web/CController.php(292): CFilterChain->run()
+#28 /Applications/MAMP/htdocs/csms/framework/web/CController.php(266): StudentController->runActionWithFilters()
+#29 /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php(276): StudentController->run()
+#30 /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#31 /Applications/MAMP/htdocs/csms/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#32 /Applications/MAMP/htdocs/csms/index.php(13): CWebApplication->run()
+REQUEST_URI=/csms/en/student/update/29
+in /Applications/MAMP/htdocs/csms/protected/extensions/EAjaxUpload/EAjaxUpload.php (86)
+in /Applications/MAMP/htdocs/csms/protected/views/student/_upload.php (35)
+in /Applications/MAMP/htdocs/csms/protected/views/student/_form.php (36)
+2018/11/28 01:19:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/student/8070 - Abritti.jpg".' in /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php(135): CWebApplication->runController('images/student/...')
+#1 /Applications/MAMP/htdocs/csms/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/csms/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/csms/images/student/8070%20-%20Abritti.jpg
+HTTP_REFERER=http://localhost/csms/en/studentEnrollmentInfo/admin
+---
+2018/11/28 01:19:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/student/10008069.jpg".' in /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php(135): CWebApplication->runController('images/student/...')
+#1 /Applications/MAMP/htdocs/csms/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/csms/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/csms/images/student/10008069.jpg
+HTTP_REFERER=http://localhost/csms/en/studentEnrollmentInfo/admin
+---
+2018/11/28 01:19:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/shortcut.js".' in /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php(135): CWebApplication->runController('js/shortcut.js')
+#1 /Applications/MAMP/htdocs/csms/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/csms/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/csms/js/shortcut.js
+HTTP_REFERER=http://localhost/csms/en/studentEnrollmentInfo/admin
+---
+2018/11/28 01:19:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/shortcut.js".' in /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php(135): CWebApplication->runController('js/shortcut.js')
+#1 /Applications/MAMP/htdocs/csms/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/csms/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/csms/js/shortcut.js
+HTTP_REFERER=http://localhost/csms/en/studentEnrollmentInfo/admin
+---
+2018/11/28 01:19:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/shortcut.js".' in /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php(135): CWebApplication->runController('js/shortcut.js')
+#1 /Applications/MAMP/htdocs/csms/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/csms/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/csms/js/shortcut.js
+HTTP_REFERER=http://localhost/csms/en/studentEnrollmentInfo/update/24
+---
+2018/11/28 01:19:45 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1. The SQL statement executed was: SELECT * FROM `batch_group` `t` WHERE batch_id=.
+in /Applications/MAMP/htdocs/csms/protected/views/studentEnrollmentInfo/_form.php (55)
+in /Applications/MAMP/htdocs/csms/protected/views/studentEnrollmentInfo/update.php (18)
+in /Applications/MAMP/htdocs/csms/protected/controllers/StudentEnrollmentInfoController.php (173)
+2018/11/28 01:19:45 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1. The SQL statement executed was: SELECT * FROM `batch_group` `t` WHERE batch_id=' in /Applications/MAMP/htdocs/csms/framework/db/CDbCommand.php:528
+Stack trace:
+#0 /Applications/MAMP/htdocs/csms/framework/db/CDbCommand.php(390): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 /Applications/MAMP/htdocs/csms/framework/db/ar/CActiveRecord.php(1287): CDbCommand->queryAll()
+#2 /Applications/MAMP/htdocs/csms/framework/db/ar/CActiveRecord.php(1406): CActiveRecord->query(Object(CDbCriteria), true)
+#3 /Applications/MAMP/htdocs/csms/protected/views/studentEnrollmentInfo/_form.php(55): CActiveRecord->findAll('batch_id=')
+#4 /Applications/MAMP/htdocs/csms/framework/web/CBaseController.php(127): require('/Applications/M...')
+#5 /Applications/MAMP/htdocs/csms/framework/web/CBaseController.php(96): CBaseController->renderInternal('/Applications/M...', Array, true)
+#6 /Applications/MAMP/htdocs/csms/framework/web/CController.php(870): CBaseController->renderFile('/Applications/M...', Array, true)
+#7 /Applications/MAMP/htdocs/csms/protected/views/studentEnrollmentInfo/update.php(18): CController->renderPartial('_form', Array)
+#8 /Applications/MAMP/htdocs/csms/framework/web/CBaseController.php(127): require('/Applications/M...')
+#9 /Applications/MAMP/htdocs/csms/framework/web/CBaseController.php(96): CBaseController->renderInternal('/Applications/M...', Array, true)
+#10 /Applications/MAMP/htdocs/csms/framework/web/CController.php(870): CBaseController->renderFile('/Applications/M...', Array, true)
+#11 /Applications/MAMP/htdocs/csms/framework/web/CController.php(783): CController->renderPartial('update', Array, true)
+#12 /Applications/MAMP/htdocs/csms/protected/controllers/StudentEnrollmentInfoController.php(173): CController->render('update', Array)
+#13 [internal function]: StudentEnrollmentInfoController->actionUpdate('24')
+#14 /Applications/MAMP/htdocs/csms/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs(Object(StudentEnrollmentInfoController), Array)
+#15 /Applications/MAMP/htdocs/csms/framework/web/actions/CInlineAction.php(48): CAction->runWithParamsInternal(Object(StudentEnrollmentInfoController), Object(ReflectionMethod), Array)
+#16 /Applications/MAMP/htdocs/csms/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#17 /Applications/MAMP/htdocs/csms/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#18 /Applications/MAMP/htdocs/csms/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#19 /Applications/MAMP/htdocs/csms/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#20 /Applications/MAMP/htdocs/csms/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#21 /Applications/MAMP/htdocs/csms/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#22 /Applications/MAMP/htdocs/csms/framework/web/CController.php(292): CFilterChain->run()
+#23 /Applications/MAMP/htdocs/csms/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#24 /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php(276): CController->run('update')
+#25 /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php(135): CWebApplication->runController('studentEnrollme...')
+#26 /Applications/MAMP/htdocs/csms/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#27 /Applications/MAMP/htdocs/csms/index.php(13): CApplication->run()
+#28 {main}
+REQUEST_URI=/csms/en/studentEnrollmentInfo/update/24
+HTTP_REFERER=http://localhost/csms/en/studentEnrollmentInfo/update/24
+---
+2018/11/28 01:36:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in /Applications/MAMP/htdocs/csms/protected/controllers/StudentEnrollmentInfoController.php:449
+Stack trace:
+#0 /Applications/MAMP/htdocs/csms/protected/controllers/StudentEnrollmentInfoController.php(159): StudentEnrollmentInfoController->loadModel('24')
+#1 [internal function]: StudentEnrollmentInfoController->actionUpdate('24')
+#2 /Applications/MAMP/htdocs/csms/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs(Object(StudentEnrollmentInfoController), Array)
+#3 /Applications/MAMP/htdocs/csms/framework/web/actions/CInlineAction.php(48): CAction->runWithParamsInternal(Object(StudentEnrollmentInfoController), Object(ReflectionMethod), Array)
+#4 /Applications/MAMP/htdocs/csms/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#5 /Applications/MAMP/htdocs/csms/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#6 /Applications/MAMP/htdocs/csms/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#7 /Applications/MAMP/htdocs/csms/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#8 /Applications/MAMP/htdocs/csms/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#9 /Applications/MAMP/htdocs/csms/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#10 /Applications/MAMP/htdocs/csms/framework/web/CController.php(292): CFilterChain->run()
+#11 /Applications/MAMP/htdocs/csms/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php(276): CController->run('update')
+#13 /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php(135): CWebApplication->runController('studentEnrollme...')
+#14 /Applications/MAMP/htdocs/csms/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#15 /Applications/MAMP/htdocs/csms/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/csms/en/studentEnrollmentInfo/update/24
+HTTP_REFERER=http://localhost/csms/en/studentEnrollmentInfo/admin
+---
+2018/11/28 01:36:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/shortcut.js".' in /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php(135): CWebApplication->runController('js/shortcut.js')
+#1 /Applications/MAMP/htdocs/csms/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/csms/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/csms/js/shortcut.js
+HTTP_REFERER=http://localhost/csms/en/studentEnrollmentInfo/update/24
+---
+2018/11/28 01:36:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/shortcut.js".' in /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php(135): CWebApplication->runController('js/shortcut.js')
+#1 /Applications/MAMP/htdocs/csms/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/csms/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/csms/js/shortcut.js
+HTTP_REFERER=http://localhost/csms/en/studentEnrollmentInfo/update/24
+---
+2018/11/28 01:36:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/shortcut.js".' in /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php(135): CWebApplication->runController('js/shortcut.js')
+#1 /Applications/MAMP/htdocs/csms/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/csms/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/csms/js/shortcut.js
+HTTP_REFERER=http://localhost/csms/
+---
+2018/11/28 01:37:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/shortcut.js".' in /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php(135): CWebApplication->runController('js/shortcut.js')
+#1 /Applications/MAMP/htdocs/csms/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/csms/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/csms/js/shortcut.js
+HTTP_REFERER=http://localhost/csms/
+---
+2018/11/28 01:37:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/shortcut.js".' in /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php(135): CWebApplication->runController('js/shortcut.js')
+#1 /Applications/MAMP/htdocs/csms/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/csms/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/csms/js/shortcut.js
+HTTP_REFERER=http://localhost/csms/
+---
+2018/11/28 01:37:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/shortcut.js".' in /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php(135): CWebApplication->runController('js/shortcut.js')
+#1 /Applications/MAMP/htdocs/csms/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/csms/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/csms/js/shortcut.js
+HTTP_REFERER=http://localhost/csms/en_us/faculty/admin
+---
+2018/11/28 01:37:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/shortcut.js".' in /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php(135): CWebApplication->runController('js/shortcut.js')
+#1 /Applications/MAMP/htdocs/csms/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/csms/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/csms/js/shortcut.js
+HTTP_REFERER=http://localhost/csms/en_us/faculty/admin
+---
+2018/11/28 01:38:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/shortcut.js".' in /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php(135): CWebApplication->runController('js/shortcut.js')
+#1 /Applications/MAMP/htdocs/csms/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/csms/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/csms/js/shortcut.js
+HTTP_REFERER=http://localhost/csms/en/faculty/create
+---
+2018/11/28 01:38:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/shortcut.js".' in /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php(135): CWebApplication->runController('js/shortcut.js')
+#1 /Applications/MAMP/htdocs/csms/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/csms/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/csms/js/shortcut.js
+HTTP_REFERER=http://localhost/csms/en/faculty/create
+---
+2018/11/28 01:38:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/shortcut.js".' in /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php(135): CWebApplication->runController('js/shortcut.js')
+#1 /Applications/MAMP/htdocs/csms/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/csms/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/csms/js/shortcut.js
+HTTP_REFERER=http://localhost/csms/en/faculty/view/1
+---
+2018/11/28 01:38:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/shortcut.js".' in /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php(135): CWebApplication->runController('js/shortcut.js')
+#1 /Applications/MAMP/htdocs/csms/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/csms/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/csms/js/shortcut.js
+HTTP_REFERER=http://localhost/csms/en/faculty/view/1
+---
+2018/11/28 01:38:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/shortcut.js".' in /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php(135): CWebApplication->runController('js/shortcut.js')
+#1 /Applications/MAMP/htdocs/csms/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/csms/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/csms/js/shortcut.js
+HTTP_REFERER=http://localhost/csms/en/faculty/create
+---
+2018/11/28 01:39:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/shortcut.js".' in /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php(135): CWebApplication->runController('js/shortcut.js')
+#1 /Applications/MAMP/htdocs/csms/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/csms/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/csms/js/shortcut.js
+HTTP_REFERER=http://localhost/csms/en/faculty/view/2
+---
+2018/11/28 01:39:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/shortcut.js".' in /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php(135): CWebApplication->runController('js/shortcut.js')
+#1 /Applications/MAMP/htdocs/csms/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/csms/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/csms/js/shortcut.js
+HTTP_REFERER=http://localhost/csms/en/faculty/view/2
+---
+2018/11/28 01:39:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/shortcut.js".' in /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php(135): CWebApplication->runController('js/shortcut.js')
+#1 /Applications/MAMP/htdocs/csms/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/csms/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/csms/js/shortcut.js
+HTTP_REFERER=http://localhost/csms/en/faculty/create
+---
+2018/11/28 01:39:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/shortcut.js".' in /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php(135): CWebApplication->runController('js/shortcut.js')
+#1 /Applications/MAMP/htdocs/csms/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/csms/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/csms/js/shortcut.js
+HTTP_REFERER=http://localhost/csms/en/faculty/create
+---
+2018/11/28 01:39:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/shortcut.js".' in /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php(135): CWebApplication->runController('js/shortcut.js')
+#1 /Applications/MAMP/htdocs/csms/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/csms/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/csms/js/shortcut.js
+HTTP_REFERER=http://localhost/csms/en/faculty/index
+---
+2018/11/28 01:39:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/shortcut.js".' in /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php(135): CWebApplication->runController('js/shortcut.js')
+#1 /Applications/MAMP/htdocs/csms/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/csms/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/csms/js/shortcut.js
+HTTP_REFERER=http://localhost/csms/
+---
+2018/11/28 01:39:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/shortcut.js".' in /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php(135): CWebApplication->runController('js/shortcut.js')
+#1 /Applications/MAMP/htdocs/csms/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/csms/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/csms/js/shortcut.js
+HTTP_REFERER=http://localhost/csms/en_us/faculty/admin
+---
+2018/11/28 01:39:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/shortcut.js".' in /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php(135): CWebApplication->runController('js/shortcut.js')
+#1 /Applications/MAMP/htdocs/csms/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/csms/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/csms/js/shortcut.js
+HTTP_REFERER=http://localhost/csms/en/faculty/update/1
+---
+2018/11/28 01:39:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/shortcut.js".' in /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php(135): CWebApplication->runController('js/shortcut.js')
+#1 /Applications/MAMP/htdocs/csms/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/csms/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/csms/js/shortcut.js
+HTTP_REFERER=http://localhost/csms/en/faculty/view/1
+---
+2018/11/28 01:39:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/shortcut.js".' in /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php(135): CWebApplication->runController('js/shortcut.js')
+#1 /Applications/MAMP/htdocs/csms/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/csms/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/csms/js/shortcut.js
+HTTP_REFERER=http://localhost/csms/en/faculty/update/1
+---
+2018/11/28 01:39:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/shortcut.js".' in /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php(135): CWebApplication->runController('js/shortcut.js')
+#1 /Applications/MAMP/htdocs/csms/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/csms/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/csms/js/shortcut.js
+HTTP_REFERER=http://localhost/csms/en_us/faculty/admin
+---
+2018/11/28 01:40:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/shortcut.js".' in /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php(135): CWebApplication->runController('js/shortcut.js')
+#1 /Applications/MAMP/htdocs/csms/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/csms/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/csms/js/shortcut.js
+HTTP_REFERER=http://localhost/csms/en/faculty/update/2
+---
+2018/11/28 01:40:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/shortcut.js".' in /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php(135): CWebApplication->runController('js/shortcut.js')
+#1 /Applications/MAMP/htdocs/csms/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/csms/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/csms/js/shortcut.js
+HTTP_REFERER=http://localhost/csms/en/faculty/view/2
+---
+2018/11/28 01:40:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/shortcut.js".' in /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php(135): CWebApplication->runController('js/shortcut.js')
+#1 /Applications/MAMP/htdocs/csms/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/csms/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/csms/js/shortcut.js
+HTTP_REFERER=http://localhost/csms/en/faculty/view/2
+---
+2018/11/28 01:40:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/shortcut.js".' in /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php(135): CWebApplication->runController('js/shortcut.js')
+#1 /Applications/MAMP/htdocs/csms/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/csms/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/csms/js/shortcut.js
+HTTP_REFERER=http://localhost/csms/en/faculty/update/2
+---
+2018/11/28 01:40:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/shortcut.js".' in /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php(135): CWebApplication->runController('js/shortcut.js')
+#1 /Applications/MAMP/htdocs/csms/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/csms/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/csms/js/shortcut.js
+HTTP_REFERER=http://localhost/csms/en/course/admin
+---
+2018/11/28 01:40:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/shortcut.js".' in /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php(135): CWebApplication->runController('js/shortcut.js')
+#1 /Applications/MAMP/htdocs/csms/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/csms/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/csms/js/shortcut.js
+HTTP_REFERER=http://localhost/csms/en/course/create
+---
+2018/11/28 01:41:59 [error] [php] Cannot modify header information - headers already sent by (output started at /Applications/MAMP/htdocs/csms/protected/controllers/CourseController.php:1) (/Applications/MAMP/htdocs/csms/framework/web/CHttpRequest.php:715)
+Stack trace:
+#0 /Applications/MAMP/htdocs/csms/protected/controllers/CourseController.php(150): CourseController->redirect()
+#1 /Applications/MAMP/htdocs/csms/framework/web/actions/CInlineAction.php(50): CourseController->actionCreate()
+#2 /Applications/MAMP/htdocs/csms/framework/web/CController.php(309): CInlineAction->runWithParams()
+#3 /Applications/MAMP/htdocs/csms/framework/web/filters/CFilterChain.php(134): CourseController->runAction()
+#4 /Applications/MAMP/htdocs/csms/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#5 /Applications/MAMP/htdocs/csms/framework/web/CController.php(1146): CAccessControlFilter->filter()
+#6 /Applications/MAMP/htdocs/csms/framework/web/filters/CInlineFilter.php(59): CourseController->filterAccessControl()
+#7 /Applications/MAMP/htdocs/csms/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#8 /Applications/MAMP/htdocs/csms/framework/web/CController.php(292): CFilterChain->run()
+#9 /Applications/MAMP/htdocs/csms/framework/web/CController.php(266): CourseController->runActionWithFilters()
+#10 /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php(276): CourseController->run()
+#11 /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#12 /Applications/MAMP/htdocs/csms/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#13 /Applications/MAMP/htdocs/csms/index.php(13): CWebApplication->run()
+REQUEST_URI=/csms/en/course/create
+in /Applications/MAMP/htdocs/csms/protected/controllers/CourseController.php (150)
+in /Applications/MAMP/htdocs/csms/index.php (13)
+2018/11/28 01:42:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/shortcut.js".' in /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php(135): CWebApplication->runController('js/shortcut.js')
+#1 /Applications/MAMP/htdocs/csms/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/csms/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/csms/js/shortcut.js
+HTTP_REFERER=http://localhost/csms/en/course/create
+---
+2018/11/28 01:42:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/shortcut.js".' in /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php(135): CWebApplication->runController('js/shortcut.js')
+#1 /Applications/MAMP/htdocs/csms/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/csms/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/csms/js/shortcut.js
+HTTP_REFERER=http://localhost/csms/en/course/create
+---
+2018/11/28 01:42:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "en/course".' in /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php(135): CWebApplication->runController('en/course')
+#1 /Applications/MAMP/htdocs/csms/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/csms/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/csms/en/course/
+---
+2018/11/28 01:42:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/shortcut.js".' in /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php(135): CWebApplication->runController('js/shortcut.js')
+#1 /Applications/MAMP/htdocs/csms/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/csms/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/csms/js/shortcut.js
+HTTP_REFERER=http://localhost/csms/en/course/
+---
+2018/11/28 01:42:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/shortcut.js".' in /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php(135): CWebApplication->runController('js/shortcut.js')
+#1 /Applications/MAMP/htdocs/csms/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/csms/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/csms/js/shortcut.js
+HTTP_REFERER=http://localhost/csms/en/course/create
+---
+2018/11/28 01:42:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/shortcut.js".' in /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php(135): CWebApplication->runController('js/shortcut.js')
+#1 /Applications/MAMP/htdocs/csms/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/csms/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/csms/js/shortcut.js
+HTTP_REFERER=http://localhost/csms/en/course/admin
+---
+2018/11/28 01:42:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/shortcut.js".' in /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php(135): CWebApplication->runController('js/shortcut.js')
+#1 /Applications/MAMP/htdocs/csms/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/csms/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/csms/js/shortcut.js
+HTTP_REFERER=http://localhost/csms/en/course/admin
+---
+2018/11/28 01:42:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/shortcut.js".' in /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php(135): CWebApplication->runController('js/shortcut.js')
+#1 /Applications/MAMP/htdocs/csms/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/csms/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/csms/js/shortcut.js
+HTTP_REFERER=http://localhost/csms/en/course/update/1
+---
+2018/11/28 01:42:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/shortcut.js".' in /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php(135): CWebApplication->runController('js/shortcut.js')
+#1 /Applications/MAMP/htdocs/csms/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/csms/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/csms/js/shortcut.js
+HTTP_REFERER=http://localhost/csms/en/department/admin
+---
+2018/11/28 01:42:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/shortcut.js".' in /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php(135): CWebApplication->runController('js/shortcut.js')
+#1 /Applications/MAMP/htdocs/csms/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/csms/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/csms/js/shortcut.js
+HTTP_REFERER=http://localhost/csms/en/department/admin
+---
+2018/11/28 01:42:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/shortcut.js".' in /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php(135): CWebApplication->runController('js/shortcut.js')
+#1 /Applications/MAMP/htdocs/csms/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/csms/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/csms/js/shortcut.js
+HTTP_REFERER=http://localhost/csms/en/department/create
+---
+2018/11/28 01:42:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/shortcut.js".' in /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php(135): CWebApplication->runController('js/shortcut.js')
+#1 /Applications/MAMP/htdocs/csms/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/csms/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/csms/js/shortcut.js
+HTTP_REFERER=http://localhost/csms/en/department/view/1
+---
+2018/11/28 01:43:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/shortcut.js".' in /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php(135): CWebApplication->runController('js/shortcut.js')
+#1 /Applications/MAMP/htdocs/csms/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/csms/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/csms/js/shortcut.js
+HTTP_REFERER=http://localhost/csms/en/courseDepartment/admin
+---
+2018/11/28 01:43:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/shortcut.js".' in /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php(135): CWebApplication->runController('js/shortcut.js')
+#1 /Applications/MAMP/htdocs/csms/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/csms/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/csms/js/shortcut.js
+HTTP_REFERER=http://localhost/csms/en/courseDepartment/admin
+---
+2018/11/28 01:43:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/shortcut.js".' in /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php(135): CWebApplication->runController('js/shortcut.js')
+#1 /Applications/MAMP/htdocs/csms/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/csms/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/csms/js/shortcut.js
+HTTP_REFERER=http://localhost/csms/en/courseDepartment/create
+---
+2018/11/28 01:43:14 [error] [php] Cannot modify header information - headers already sent by (output started at /Applications/MAMP/htdocs/csms/protected/models/CourseDepartment.php:1) (/Applications/MAMP/htdocs/csms/framework/web/CHttpRequest.php:715)
+Stack trace:
+#0 /Applications/MAMP/htdocs/csms/protected/controllers/CourseDepartmentController.php(132): CourseDepartmentController->redirect()
+#1 /Applications/MAMP/htdocs/csms/framework/web/actions/CInlineAction.php(50): CourseDepartmentController->actionCreate()
+#2 /Applications/MAMP/htdocs/csms/framework/web/CController.php(309): CInlineAction->runWithParams()
+#3 /Applications/MAMP/htdocs/csms/framework/web/filters/CFilterChain.php(134): CourseDepartmentController->runAction()
+#4 /Applications/MAMP/htdocs/csms/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#5 /Applications/MAMP/htdocs/csms/framework/web/CController.php(1146): CAccessControlFilter->filter()
+#6 /Applications/MAMP/htdocs/csms/framework/web/filters/CInlineFilter.php(59): CourseDepartmentController->filterAccessControl()
+#7 /Applications/MAMP/htdocs/csms/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#8 /Applications/MAMP/htdocs/csms/framework/web/CController.php(292): CFilterChain->run()
+#9 /Applications/MAMP/htdocs/csms/framework/web/CController.php(266): CourseDepartmentController->runActionWithFilters()
+#10 /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php(276): CourseDepartmentController->run()
+#11 /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#12 /Applications/MAMP/htdocs/csms/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#13 /Applications/MAMP/htdocs/csms/index.php(13): CWebApplication->run()
+REQUEST_URI=/csms/en/courseDepartment/create
+in /Applications/MAMP/htdocs/csms/protected/controllers/CourseDepartmentController.php (132)
+in /Applications/MAMP/htdocs/csms/index.php (13)
+2018/11/28 01:43:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/shortcut.js".' in /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php(135): CWebApplication->runController('js/shortcut.js')
+#1 /Applications/MAMP/htdocs/csms/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/csms/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/csms/js/shortcut.js
+HTTP_REFERER=http://localhost/csms/en/courseDepartment/create
+---
+2018/11/28 01:43:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/shortcut.js".' in /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php(135): CWebApplication->runController('js/shortcut.js')
+#1 /Applications/MAMP/htdocs/csms/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/csms/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/csms/js/shortcut.js
+HTTP_REFERER=http://localhost/csms/en/courseDepartment/create
+---
+2018/11/28 01:43:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/shortcut.js".' in /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php(135): CWebApplication->runController('js/shortcut.js')
+#1 /Applications/MAMP/htdocs/csms/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/csms/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/csms/js/shortcut.js
+HTTP_REFERER=http://localhost/csms/en/courseDepartment/admin
+---
+2018/11/28 01:43:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/shortcut.js".' in /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php(135): CWebApplication->runController('js/shortcut.js')
+#1 /Applications/MAMP/htdocs/csms/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/csms/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/csms/js/shortcut.js
+HTTP_REFERER=http://localhost/csms/en/courseDepartment/admin
+---
+2018/11/28 01:43:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/shortcut.js".' in /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php(135): CWebApplication->runController('js/shortcut.js')
+#1 /Applications/MAMP/htdocs/csms/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/csms/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/csms/js/shortcut.js
+HTTP_REFERER=http://localhost/csms/en/courseDepartment/update/1
+---
+2018/11/28 01:44:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/shortcut.js".' in /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php(135): CWebApplication->runController('js/shortcut.js')
+#1 /Applications/MAMP/htdocs/csms/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/csms/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/csms/js/shortcut.js
+HTTP_REFERER=http://localhost/csms/en/subject/admin
+---
+2018/11/28 01:44:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/shortcut.js".' in /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php(135): CWebApplication->runController('js/shortcut.js')
+#1 /Applications/MAMP/htdocs/csms/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/csms/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/csms/js/shortcut.js
+HTTP_REFERER=http://localhost/csms/en/subject/admin
+---
+2018/11/28 01:44:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/shortcut.js".' in /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php(135): CWebApplication->runController('js/shortcut.js')
+#1 /Applications/MAMP/htdocs/csms/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/csms/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/csms/js/shortcut.js
+HTTP_REFERER=http://localhost/csms/en/subject/create
+---
+2018/11/28 01:45:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/shortcut.js".' in /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php(135): CWebApplication->runController('js/shortcut.js')
+#1 /Applications/MAMP/htdocs/csms/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/csms/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/csms/js/shortcut.js
+HTTP_REFERER=http://localhost/csms/en/subject/view/1
+---
+2018/11/28 01:45:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/shortcut.js".' in /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php(135): CWebApplication->runController('js/shortcut.js')
+#1 /Applications/MAMP/htdocs/csms/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/csms/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/csms/js/shortcut.js
+HTTP_REFERER=http://localhost/csms/en/subject/view/1
+---
+2018/11/28 01:45:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/shortcut.js".' in /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php(135): CWebApplication->runController('js/shortcut.js')
+#1 /Applications/MAMP/htdocs/csms/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/csms/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/csms/js/shortcut.js
+HTTP_REFERER=http://localhost/csms/en/subject/view/1
+---
+2018/11/28 01:45:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/shortcut.js".' in /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php(135): CWebApplication->runController('js/shortcut.js')
+#1 /Applications/MAMP/htdocs/csms/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/csms/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/csms/js/shortcut.js
+HTTP_REFERER=http://localhost/csms/en/subject/create
+---
+2018/11/28 01:45:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/shortcut.js".' in /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php(135): CWebApplication->runController('js/shortcut.js')
+#1 /Applications/MAMP/htdocs/csms/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/csms/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/csms/js/shortcut.js
+HTTP_REFERER=http://localhost/csms/en/subject/view/2
+---
+2018/11/28 01:45:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/shortcut.js".' in /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php(135): CWebApplication->runController('js/shortcut.js')
+#1 /Applications/MAMP/htdocs/csms/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/csms/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/csms/js/shortcut.js
+HTTP_REFERER=http://localhost/csms/en/subject/view/2
+---
+2018/11/28 01:45:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/shortcut.js".' in /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php(135): CWebApplication->runController('js/shortcut.js')
+#1 /Applications/MAMP/htdocs/csms/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/csms/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/csms/js/shortcut.js
+HTTP_REFERER=http://localhost/csms/en/subject/create
+---
+2018/11/28 01:46:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/shortcut.js".' in /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php(135): CWebApplication->runController('js/shortcut.js')
+#1 /Applications/MAMP/htdocs/csms/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/csms/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/csms/js/shortcut.js
+HTTP_REFERER=http://localhost/csms/en/courseSemesterLebel/admin
+---
+2018/11/28 01:46:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/shortcut.js".' in /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php(135): CWebApplication->runController('js/shortcut.js')
+#1 /Applications/MAMP/htdocs/csms/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/csms/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/csms/js/shortcut.js
+HTTP_REFERER=http://localhost/csms/en/courseSemesterLebel/admin
+---
+2018/11/28 01:46:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/shortcut.js".' in /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php(135): CWebApplication->runController('js/shortcut.js')
+#1 /Applications/MAMP/htdocs/csms/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/csms/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/csms/js/shortcut.js
+HTTP_REFERER=http://localhost/csms/en/subject/create
+---
+2018/11/28 01:46:21 [error] [php] Trying to get property of non-object (/Applications/MAMP/htdocs/csms/framework/base/CComponent.php(607) : eval()'d code:1)
+Stack trace:
+#0 /Applications/MAMP/htdocs/csms/framework/zii/widgets/grid/CGridColumn.php(138): BootDataColumn->renderDataCellContent()
+#1 /Applications/MAMP/htdocs/csms/framework/zii/widgets/grid/CGridView.php(517): BootDataColumn->renderDataCell()
+#2 /Applications/MAMP/htdocs/csms/framework/zii/widgets/grid/CGridView.php(490): BootGridView->renderTableRow()
+#3 /Applications/MAMP/htdocs/csms/framework/zii/widgets/grid/CGridView.php(400): BootGridView->renderTableBody()
+#4 /Applications/MAMP/htdocs/csms/framework/zii/widgets/CBaseListView.php(158): BootGridView->renderItems()
+#5 unknown(0): BootGridView->renderSection()
+#6 /Applications/MAMP/htdocs/csms/framework/zii/widgets/CBaseListView.php(141): preg_replace_callback()
+#7 /Applications/MAMP/htdocs/csms/framework/zii/widgets/CBaseListView.php(126): BootGridView->renderContent()
+#8 /Applications/MAMP/htdocs/csms/framework/web/CBaseController.php(174): BootGridView->run()
+#9 /Applications/MAMP/htdocs/csms/protected/views/batch/admin.php(71): BatchController->widget()
+#10 /Applications/MAMP/htdocs/csms/framework/web/CBaseController.php(127): require()
+#11 /Applications/MAMP/htdocs/csms/framework/web/CBaseController.php(96): BatchController->renderInternal()
+#12 /Applications/MAMP/htdocs/csms/framework/web/CController.php(870): BatchController->renderFile()
+#13 /Applications/MAMP/htdocs/csms/framework/web/CController.php(783): BatchController->renderPartial()
+#14 /Applications/MAMP/htdocs/csms/protected/controllers/BatchController.php(258): BatchController->render()
+#15 /Applications/MAMP/htdocs/csms/framework/web/actions/CInlineAction.php(50): BatchController->actionAdmin()
+#16 /Applications/MAMP/htdocs/csms/framework/web/CController.php(309): CInlineAction->runWithParams()
+#17 /Applications/MAMP/htdocs/csms/framework/web/filters/CFilterChain.php(134): BatchController->runAction()
+#18 /Applications/MAMP/htdocs/csms/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#19 /Applications/MAMP/htdocs/csms/framework/web/CController.php(1146): CAccessControlFilter->filter()
+#20 /Applications/MAMP/htdocs/csms/framework/web/filters/CInlineFilter.php(59): BatchController->filterAccessControl()
+#21 /Applications/MAMP/htdocs/csms/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#22 /Applications/MAMP/htdocs/csms/framework/web/CController.php(292): CFilterChain->run()
+#23 /Applications/MAMP/htdocs/csms/framework/web/CController.php(266): BatchController->runActionWithFilters()
+#24 /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php(276): BatchController->run()
+#25 /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#26 /Applications/MAMP/htdocs/csms/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#27 /Applications/MAMP/htdocs/csms/index.php(13): CWebApplication->run()
+REQUEST_URI=/csms/en/batch/admin
+in /Applications/MAMP/htdocs/csms/protected/views/batch/admin.php (71)
+in /Applications/MAMP/htdocs/csms/protected/controllers/BatchController.php (258)
+in /Applications/MAMP/htdocs/csms/index.php (13)
+2018/11/28 01:46:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/shortcut.js".' in /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php(135): CWebApplication->runController('js/shortcut.js')
+#1 /Applications/MAMP/htdocs/csms/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/csms/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/csms/js/shortcut.js
+HTTP_REFERER=http://localhost/csms/en/subject/create
+---
+2018/11/28 01:46:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/shortcut.js".' in /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php(135): CWebApplication->runController('js/shortcut.js')
+#1 /Applications/MAMP/htdocs/csms/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/csms/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/csms/js/shortcut.js
+HTTP_REFERER=http://localhost/csms/en/subject/create
+---
+2018/11/28 01:46:58 [error] [php] Trying to get property of non-object (/Applications/MAMP/htdocs/csms/framework/base/CComponent.php(607) : eval()'d code:1)
+Stack trace:
+#0 /Applications/MAMP/htdocs/csms/framework/zii/widgets/grid/CGridColumn.php(138): BootDataColumn->renderDataCellContent()
+#1 /Applications/MAMP/htdocs/csms/framework/zii/widgets/grid/CGridView.php(517): BootDataColumn->renderDataCell()
+#2 /Applications/MAMP/htdocs/csms/framework/zii/widgets/grid/CGridView.php(490): BootGridView->renderTableRow()
+#3 /Applications/MAMP/htdocs/csms/framework/zii/widgets/grid/CGridView.php(400): BootGridView->renderTableBody()
+#4 /Applications/MAMP/htdocs/csms/framework/zii/widgets/CBaseListView.php(158): BootGridView->renderItems()
+#5 unknown(0): BootGridView->renderSection()
+#6 /Applications/MAMP/htdocs/csms/framework/zii/widgets/CBaseListView.php(141): preg_replace_callback()
+#7 /Applications/MAMP/htdocs/csms/framework/zii/widgets/CBaseListView.php(126): BootGridView->renderContent()
+#8 /Applications/MAMP/htdocs/csms/framework/web/CBaseController.php(174): BootGridView->run()
+#9 /Applications/MAMP/htdocs/csms/protected/views/batch/admin.php(71): BatchController->widget()
+#10 /Applications/MAMP/htdocs/csms/framework/web/CBaseController.php(127): require()
+#11 /Applications/MAMP/htdocs/csms/framework/web/CBaseController.php(96): BatchController->renderInternal()
+#12 /Applications/MAMP/htdocs/csms/framework/web/CController.php(870): BatchController->renderFile()
+#13 /Applications/MAMP/htdocs/csms/framework/web/CController.php(783): BatchController->renderPartial()
+#14 /Applications/MAMP/htdocs/csms/protected/controllers/BatchController.php(258): BatchController->render()
+#15 /Applications/MAMP/htdocs/csms/framework/web/actions/CInlineAction.php(50): BatchController->actionAdmin()
+#16 /Applications/MAMP/htdocs/csms/framework/web/CController.php(309): CInlineAction->runWithParams()
+#17 /Applications/MAMP/htdocs/csms/framework/web/filters/CFilterChain.php(134): BatchController->runAction()
+#18 /Applications/MAMP/htdocs/csms/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#19 /Applications/MAMP/htdocs/csms/framework/web/CController.php(1146): CAccessControlFilter->filter()
+#20 /Applications/MAMP/htdocs/csms/framework/web/filters/CInlineFilter.php(59): BatchController->filterAccessControl()
+#21 /Applications/MAMP/htdocs/csms/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#22 /Applications/MAMP/htdocs/csms/framework/web/CController.php(292): CFilterChain->run()
+#23 /Applications/MAMP/htdocs/csms/framework/web/CController.php(266): BatchController->runActionWithFilters()
+#24 /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php(276): BatchController->run()
+#25 /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#26 /Applications/MAMP/htdocs/csms/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#27 /Applications/MAMP/htdocs/csms/index.php(13): CWebApplication->run()
+REQUEST_URI=/csms/en/batch/admin
+in /Applications/MAMP/htdocs/csms/protected/views/batch/admin.php (71)
+in /Applications/MAMP/htdocs/csms/protected/controllers/BatchController.php (258)
+in /Applications/MAMP/htdocs/csms/index.php (13)
+2018/11/28 01:47:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/shortcut.js".' in /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php(135): CWebApplication->runController('js/shortcut.js')
+#1 /Applications/MAMP/htdocs/csms/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/csms/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/csms/js/shortcut.js
+HTTP_REFERER=http://localhost/csms/en/subject/create
+---
+2018/11/28 01:47:07 [error] [php] Trying to get property of non-object (/Applications/MAMP/htdocs/csms/framework/base/CComponent.php(607) : eval()'d code:1)
+Stack trace:
+#0 /Applications/MAMP/htdocs/csms/framework/zii/widgets/grid/CGridColumn.php(138): BootDataColumn->renderDataCellContent()
+#1 /Applications/MAMP/htdocs/csms/framework/zii/widgets/grid/CGridView.php(517): BootDataColumn->renderDataCell()
+#2 /Applications/MAMP/htdocs/csms/framework/zii/widgets/grid/CGridView.php(490): BootGridView->renderTableRow()
+#3 /Applications/MAMP/htdocs/csms/framework/zii/widgets/grid/CGridView.php(400): BootGridView->renderTableBody()
+#4 /Applications/MAMP/htdocs/csms/framework/zii/widgets/CBaseListView.php(158): BootGridView->renderItems()
+#5 unknown(0): BootGridView->renderSection()
+#6 /Applications/MAMP/htdocs/csms/framework/zii/widgets/CBaseListView.php(141): preg_replace_callback()
+#7 /Applications/MAMP/htdocs/csms/framework/zii/widgets/CBaseListView.php(126): BootGridView->renderContent()
+#8 /Applications/MAMP/htdocs/csms/framework/web/CBaseController.php(174): BootGridView->run()
+#9 /Applications/MAMP/htdocs/csms/protected/views/batchSection/admin.php(83): BatchSectionController->widget()
+#10 /Applications/MAMP/htdocs/csms/framework/web/CBaseController.php(127): require()
+#11 /Applications/MAMP/htdocs/csms/framework/web/CBaseController.php(96): BatchSectionController->renderInternal()
+#12 /Applications/MAMP/htdocs/csms/framework/web/CController.php(870): BatchSectionController->renderFile()
+#13 /Applications/MAMP/htdocs/csms/framework/web/CController.php(783): BatchSectionController->renderPartial()
+#14 /Applications/MAMP/htdocs/csms/protected/controllers/BatchSectionController.php(187): BatchSectionController->render()
+#15 /Applications/MAMP/htdocs/csms/framework/web/actions/CInlineAction.php(50): BatchSectionController->actionAdmin()
+#16 /Applications/MAMP/htdocs/csms/framework/web/CController.php(309): CInlineAction->runWithParams()
+#17 /Applications/MAMP/htdocs/csms/framework/web/filters/CFilterChain.php(134): BatchSectionController->runAction()
+#18 /Applications/MAMP/htdocs/csms/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#19 /Applications/MAMP/htdocs/csms/framework/web/CController.php(1146): CAccessControlFilter->filter()
+#20 /Applications/MAMP/htdocs/csms/framework/web/filters/CInlineFilter.php(59): BatchSectionController->filterAccessControl()
+#21 /Applications/MAMP/htdocs/csms/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#22 /Applications/MAMP/htdocs/csms/framework/web/CController.php(292): CFilterChain->run()
+#23 /Applications/MAMP/htdocs/csms/framework/web/CController.php(266): BatchSectionController->runActionWithFilters()
+#24 /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php(276): BatchSectionController->run()
+#25 /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#26 /Applications/MAMP/htdocs/csms/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#27 /Applications/MAMP/htdocs/csms/index.php(13): CWebApplication->run()
+REQUEST_URI=/csms/en/batchSection/admin
+in /Applications/MAMP/htdocs/csms/protected/views/batchSection/admin.php (83)
+in /Applications/MAMP/htdocs/csms/protected/controllers/BatchSectionController.php (187)
+in /Applications/MAMP/htdocs/csms/index.php (13)
+2018/11/28 01:47:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/shortcut.js".' in /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php(135): CWebApplication->runController('js/shortcut.js')
+#1 /Applications/MAMP/htdocs/csms/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/csms/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/csms/js/shortcut.js
+HTTP_REFERER=http://localhost/csms/en/subject/create
+---
+2018/11/28 01:47:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/shortcut.js".' in /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php(135): CWebApplication->runController('js/shortcut.js')
+#1 /Applications/MAMP/htdocs/csms/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/csms/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/csms/js/shortcut.js
+HTTP_REFERER=http://localhost/csms/en/batchGroup/admin
+---
+2018/11/28 01:48:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/shortcut.js".' in /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php(135): CWebApplication->runController('js/shortcut.js')
+#1 /Applications/MAMP/htdocs/csms/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/csms/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/csms/js/shortcut.js
+HTTP_REFERER=http://localhost/csms/en/batchGroup/admin
+---
+2018/11/28 01:48:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/shortcut.js".' in /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php(135): CWebApplication->runController('js/shortcut.js')
+#1 /Applications/MAMP/htdocs/csms/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/csms/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/csms/js/shortcut.js
+HTTP_REFERER=http://localhost/csms/en/batchGroup/admin
+---
+2018/11/28 01:48:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/shortcut.js".' in /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php(135): CWebApplication->runController('js/shortcut.js')
+#1 /Applications/MAMP/htdocs/csms/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/csms/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/csms/js/shortcut.js
+HTTP_REFERER=http://localhost/csms/en/subject/admin
+---
+2018/11/28 01:48:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/shortcut.js".' in /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php(135): CWebApplication->runController('js/shortcut.js')
+#1 /Applications/MAMP/htdocs/csms/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/csms/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/csms/js/shortcut.js
+HTTP_REFERER=http://localhost/csms/en/batchSection/admin
+---
+2018/11/28 01:48:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/shortcut.js".' in /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php(135): CWebApplication->runController('js/shortcut.js')
+#1 /Applications/MAMP/htdocs/csms/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/csms/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/csms/js/shortcut.js
+HTTP_REFERER=http://localhost/csms/en/batchSection/admin
+---
+2018/11/28 01:48:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/shortcut.js".' in /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /Applications/MAMP/htdocs/csms/framework/web/CWebApplication.php(135): CWebApplication->runController('js/shortcut.js')
+#1 /Applications/MAMP/htdocs/csms/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/csms/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/csms/js/shortcut.js
+HTTP_REFERER=http://localhost/csms/en/batchSection/create
+---

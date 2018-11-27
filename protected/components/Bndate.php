@@ -521,7 +521,7 @@ class Bndate
 		//$this->bangYear = $this->engYear - 593; //added by hakim
 	}
 
-	function get_year($date)
+	public static function get_year($date)
 	{
 		$ddate=strtotime($date);
 		$enday=date("d",$ddate);

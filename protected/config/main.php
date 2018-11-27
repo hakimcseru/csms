@@ -67,7 +67,7 @@ return array(
 		),*/
 		'urlManager'=>array(
 			'class'=>'application.extensions.urlManager.LangUrlManager',
-			'languages'=>array('bn','en'),
+			'languages'=>array('en','bn'),
 			'langParam'=>'language',
 			'urlFormat'=>'path',
 			'rules'=>array(
